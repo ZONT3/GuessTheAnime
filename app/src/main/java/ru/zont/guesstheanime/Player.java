@@ -37,6 +37,7 @@ public class Player implements Serializable {
     }
 
     boolean isCompleted(int i, Context context) {
+        if (i<0) return true;
         upd(context);
         return completed.contains(i);
     }
@@ -45,11 +46,30 @@ public class Player implements Serializable {
         upd(context);
         if (!completed.contains(i))
             completed.add(i);
+        save(context);
     }
 
     int addScore(int add, Context context) {
         upd(context);
         score += add;
+        save(context);
         return score;
+    }
+
+    private void save(Context context) {
+        File save = new File(context.getFilesDir(), "player.sv");
+
+        try {
+            FileOutputStream out = new FileOutputStream(save);
+            ObjectOutputStream oout = new ObjectOutputStream(out);
+            oout.writeObject(this);
+            oout.flush();
+            oout.close();
+        } catch (Exception e) {e.printStackTrace();}
+    }
+
+    static boolean delete(Context context) {
+        File save = new File(context.getFilesDir(), "player.sv");
+        return save.delete();
     }
 }

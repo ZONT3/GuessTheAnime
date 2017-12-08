@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:ads="http://schemas.android.com/apk/res-auto">
@@ -11,18 +12,27 @@
         android:layout_above="@+id/adView">
 
         <LinearLayout
+            android:id="@+id/main_levels"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:id="@+id/main_topLay"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
 
+                <Button
+                    android:id="@+id/main_firstButt"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:textSize="32sp"
+                    android:visibility="gone" />
 
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
 
@@ -32,5 +42,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7799305268524604/3624610002"
         />
 </RelativeLayout>

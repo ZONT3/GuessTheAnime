@@ -2,26 +2,21 @@ package ru.zont.guesstheanime;
 
 import android.content.Context;
 import android.support.annotation.DrawableRes;
-import android.support.annotation.IdRes;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
-import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 
-public class Anime {
+class Anime {
 
     @DrawableRes int image = R.mipmap.ic_launcher;
 
-    ArrayList<String[]> titles = new ArrayList<>();
+    private ArrayList<String[]> titles = new ArrayList<>();
+    ArrayList<String[]> displayTitles = new ArrayList<>();
     String originalTitle = "";
     String originalRomTitle = "";
 
@@ -32,9 +27,10 @@ public class Anime {
     }
 
     boolean hasTitle(String s) {
-        return s.equals(originalRomTitle)
-                || s.equals(originalTitle)
-                || titles.contains(s);
+        if (s.equalsIgnoreCase(originalRomTitle) || s.equalsIgnoreCase(originalTitle)) return true;
+        for (String[] t : titles)
+            if (t[0].equalsIgnoreCase(s)) return true;
+        return false;
     }
 
     private void parse(int i, Context context) {
@@ -47,24 +43,30 @@ public class Anime {
         originalTitle = title.getAttribute("oname");
 
         NodeList names = title.getElementsByTagName("name");
-        for (int j=0; j<names.getLength(); j++) {
+        for (int j = 0; j < names.getLength(); j++) {
             Element name = (Element) names.item(j);
-            titles.add(new String[]{name.getAttribute("value"),name.getAttribute("lang")});
+            titles.add(new String[]{name.getAttribute("value"), name.getAttribute("lang")});
+            if (name.hasAttribute("hidden")) {
+                if (name.getAttribute("hidden").equals("false"))
+                    displayTitles.add(new String[]{name.getAttribute("value"), name.getAttribute("lang")});
+            } else displayTitles.add(new String[]{name.getAttribute("value"), name.getAttribute("lang")});
         }
     }
-
     //----------STATIC
 
     private static Element root = null;
 
     private static Element getRoot(Context context) {
         if (root == null) {
-            Document doc = null;
             try {
-                doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(context.getResources().openRawResource(R.raw.animelist));
+                Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(context.getResources().openRawResource(R.raw.animelist));
                 root = doc.getDocumentElement();
             } catch (Exception e) {e.printStackTrace();}
         }
         return root;
+    }
+
+    static int getTotalCount(Context context) {
+        return getRoot(context).getElementsByTagName("title").getLength();
     }
 }

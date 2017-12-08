@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Угадай Аниме</string>
+    <string name="guess_wrong">Неверно!</string>
+    <string name="guess_hint_title">Тайтл…</string>
+    <string name="guess_true">Правильно! Вы получаете %d поинт(а/ов)!</string>
+    <string name="main_reset_title">Удалить прогресс</string>
+    <string name="main_reset_message">Вы действительно хотите удалить ВЕСЬ прогресс?</string>
+    <string name="main_delete_fail">Удаление не произошло :/</string>
+    <string name="main_delete_suc">Профиль удален</string>
+    <string name="guess_next">Далее</string>
+    <string name="guess_lol">Лол, как ты нажал сюда?</string>
+    <string name="screenshot">))</string>
+    <string name="guess_activity_title">Очки: %d | Номер: %d</string>
+</resources>

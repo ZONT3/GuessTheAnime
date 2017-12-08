@@ -1,7 +1,15 @@
 <resources>
     <string name="app_name">Guess The Anime</string>
-    <string name="title_activity_guess">GuessActivity</string>
     <string name="guess_wrong">Wrong answer!</string>
-    <string name="guess_hint_title">Title...</string>
-    <string name="enter">ENTER</string>
+    <string name="guess_hint_title">Title…</string>
+    <string name="enter" translatable="false">ENTER</string>
+    <string name="guess_true">True! You have received %d points!</string>
+    <string name="main_reset_title">Delete progress</string>
+    <string name="main_reset_message">Do You really want to delete all the progress?</string>
+    <string name="main_delete_fail">FIle has not deleted!</string>
+    <string name="main_delete_suc">Deleting successful</string>
+    <string name="guess_next">Next</string>
+    <string name="guess_lol">Lol, how did you done that?</string>
+    <string name="screenshot">Screenshot</string>
+    <string name="guess_activity_title">Score: %d | Number: %d</string>
 </resources>
