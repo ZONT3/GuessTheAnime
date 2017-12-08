@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Guess The Anime</string>
+    <string name="title_activity_guess">GuessActivity</string>
+    <string name="guess_wrong">Wrong answer!</string>
+    <string name="guess_hint_title">Title...</string>
+    <string name="enter">ENTER</string>
+</resources>

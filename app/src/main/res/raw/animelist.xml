@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+    <title name="Boku no Hero Academia"
+        oname="僕のヒーローアカデミア"
+        score="5"
+        image="bnha">
+        <name value="My Hero Academia" lang="en_US"/>
+        <name value="Моя Геройская Академия" lang="ru_RU"/>
+    </title>
+    <title name="Mahou tsukai no Yome"
+        oname="マホー使いの嫁"
+        score="7"
+        image="mny">
+        <name value="The Ancient Magus' Bride" lang="en_US" />
+        <name value="Невеста Чародея" lang="ru_RU"/>
+    </title>
+</list>
