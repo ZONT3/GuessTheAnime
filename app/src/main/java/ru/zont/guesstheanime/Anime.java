@@ -5,8 +5,10 @@ import android.support.annotation.DrawableRes;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import java.nio.file.NotLinkException;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -17,6 +19,8 @@ class Anime {
 
     private ArrayList<String[]> titles = new ArrayList<>();
     ArrayList<String[]> displayTitles = new ArrayList<>();
+    private ArrayList<String[]> descriptions = new ArrayList<>();
+    ArrayList<String> characters = new ArrayList<>();
     String originalTitle = "";
     String originalRomTitle = "";
 
@@ -31,6 +35,33 @@ class Anime {
         for (String[] t : titles)
             if (t[0].equalsIgnoreCase(s)) return true;
         return false;
+    }
+
+    String getTitle(String lang, @SuppressWarnings("SameParameterValue") boolean display) {
+        ArrayList<String[]> list = titles;
+        if (display) list = displayTitles;
+        String res = null;
+
+        if (lang.equals("jp")) res = originalRomTitle;
+
+        for (String[] str : list)
+            if (str[1].equals(lang))
+                return str[0];
+        return res;
+    }
+
+    String getTitleLang(String title) {
+        for (String[] str : titles)
+            if (str[0].equalsIgnoreCase(title))
+                return str[1];
+        return "";
+    }
+
+    String getDescription(String lang) {
+        for (String[] str : descriptions)
+            if (str[1].equals(lang))
+                return str[0];
+        return null;
     }
 
     private void parse(int i, Context context) {
@@ -51,6 +82,16 @@ class Anime {
                     displayTitles.add(new String[]{name.getAttribute("value"), name.getAttribute("lang")});
             } else displayTitles.add(new String[]{name.getAttribute("value"), name.getAttribute("lang")});
         }
+
+        NodeList descs = title.getElementsByTagName("description");
+        for (int j=0; j<descs.getLength(); j++) {
+            Element desc = (Element) descs.item(j);
+            descriptions.add(new String[]{desc.getTextContent(), desc.getAttribute("lang")});
+        }
+
+        NodeList characters = title.getElementsByTagName("char");
+        for (int j=0; j<characters.getLength(); j++)
+            this.characters.add(characters.item(j).getTextContent());
     }
     //----------STATIC
 

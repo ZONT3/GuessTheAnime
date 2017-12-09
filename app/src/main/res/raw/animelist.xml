@@ -7,6 +7,27 @@
         <name value="Boku no Hero Academia" lang="jp"/>
         <name value="My Hero Academia" lang="en"/>
         <name value="Моя Геройская Академия" lang="ru"/>
+        <char>Aoyama Yuuga</char>
+        <char>Ashido Mina</char>
+        <char>Asui Tsuyu</char>
+        <char>Bakugou Katsuki</char>
+        <char>Hagakure Tooru</char>
+        <char>Iida Tenya</char>
+        <char>Jirou Kyouka</char>
+        <char>Kaminari Denki</char>
+        <char>Kirishima Eijirou</char>
+        <char>Kouda Kouji</char>
+        <char>Midoriya Izuku</char>
+        <char>Mineta Minoru</char>
+        <char>Ojiro Mashirao</char>
+        <char>Satou Rikidou</char>
+        <char>Sero Hanta</char>
+        <char>Shouji Mezou</char>
+        <char>Todoroki Shouto</char>
+        <char>Tokoyami Fumikage</char>
+        <char>Uraraka Ochako</char>
+        <char>Yaoyorozu Momo</char>
+        <description lang="ru">Аниме/Манга повествует о мире, где больший процент населения человечества рождается с необычной способностью, которая называется «причуда», но наш главный герой в этот процент не попал. И по всем законам жанра неудачник сам упорно пытается достичь небывалой силы и приблизиться к своей мечте – стать супергероем.</description>
     </title>
     <title name="Mahou Tsukai no Yome"
         oname="マホー使いの嫁"
@@ -14,9 +35,13 @@
         image="mny">
         <name value="The Ancient Magus' Bride" lang="en" />
         <name value="The Ancient Magus Bride" lang="en" hidden="true"/>
-        <name value="Magus' Bride" lang="en"/>
+        <name value="Magus' Bride" lang="en" hidden="true"/>
         <name value="Magus Bride" lang="en" hidden="true"/>
+        <name value="The Magician's Bride" lang="en"/>
+        <name value="The Magicians Bride" lang="en" hidden="true"/>
         <name value="Невеста Чародея" lang="ru"/>
+        <char>Hatori Chise</char>
+        <description lang="ru">Хатори Тисэ только 16, но она уже пережила все тяготы жизни. У неё нет никого, и жизнь её не имеет смысла. Но внезапно уже успевшие заржаветь шестерёнки судьбы начинают двигаться. В тяжёлый момент таинственный маг предложил Тисэ помощь, от которой она не могла отказаться. Но кто же он? Он похож скорее на демона, чем на человека. Поможет ли он ей или же ввергнет в пучину тьмы?</description>
     </title>
     <title name="Burendo S"
         oname="ブレンド・S"
@@ -24,6 +49,9 @@
         image="bs">
         <name value="Blend S" lang="en"/>
         <name value="Садистская Смесь" lang="ru"/>
+        <char>Akizuki Kouyou</char>
+        <char>Hinata Kaho</char>
+        <description lang="ru">Аниме покажет рабочие будни ресторанчика, полного официанток на любой вкус — от цундере до трапа. Главная героиня, устроившись сюда на работу, получает роль супер-садистки. Как она справится с необходимостью превратиться в подавляющую и агрессивную личность на потеху посетителей?</description>
     </title>
     <title name="Kantai Corekushon"
         oname="艦隊これくしょん"
@@ -34,6 +62,7 @@
         <name value="艦これ" lang="jp"/>
         <name value="Флотская Коллекция" lang="ru"/>
         <name value="Бурятские Кораблики" hidden="true" lang="ru"/>
+        <char>Yuudachi</char>
     </title>
     <title name="No Geimu no Raifu"
         oname="ノ・ゲイム・ノ・ライフ"
@@ -44,6 +73,8 @@
         <name value="Нет Игры - Нет Жизни" lang="ru"/>
         <name value="Нет Игры Нет Жизни" lang="ru" hidden="true"/>
         <name value="Без Игры Нет Жизни" lang="ru" hidden="true"/>
+        <char>Jibril</char>
+        <description lang="ru">Сора и Широ - гении, чья репутация хикикомори и геймеров породила легенды по всему интернету. Они считают все вокруг себя лишь отвратительной игрой. Но вот однажды, Тет, "Бог" другого мира, призвал их к себе(точнее, притащил). В своем мире он запретил войны, ВСЕ без исключения решается играми.</description>
     </title>
     <title name="Kyoukai no Kanata"
         oname="境界の彼方"
@@ -54,6 +85,9 @@
         <name value="Загранник" lang="ru" hidden="true"/>
         <name value="За пределами" lang="ru" hidden="true"/>
         <name value="По ту сторону границы" lang="ru" hidden="true"/>
+        <char>Inami Sakura</char>
+        <description lang="ru">Ёму и Йокаи – мифические создания, о которых испокон веков ходят легенды. Монстры, чудовища, вурдалаки - во всех странах мира эти воплощения лютой ненависти называют по-разному, но в стране восходящего солнца, которая издревле считалась их родным домом, им было дано имя Йокаи.
+            Акихито Канбара - редкий представитель этих чудовищ, в нем течет кровь как человека, так и благороднейших ёму, но его происхождение не сделало его ни озлобленным, ни отчужденным, а, напротив, породило ярое желание жить жизнью обычных людей.</description>
     </title>
     <title name="Rokudenahi Majutsu Koushi to Kinki Kyouten"
         oname="ロクでなし魔術講師と禁忌教典"
@@ -65,14 +99,20 @@
         <name value="ロクでなし魔術講師とアカシックレコード" lang="jp"/>
         <name value="Akashic Records of Bastard Magical Instructor" lang="en" hidden="true"/>
         <name value="Bastard Magical Instructor and Akashic Records" lang="en" hidden="true"/>
+        <name value="Akashic Records" lang="en" hidden="true"/>
         <name value="Akashic Records and Bastard Magical Instructor" lang="en"/>
         <name value="Худший преподователь магии и Акашийские Хроники" lang="ru"/>
         <name value="Худший преподователь магии и Хроники Акаши" lang="ru" hidden="true"/>
+        <name value="Хроники Акаши" lang="ru" hidden="true"/>
         <name value="Акашийские Хроники и Худший преподователь магии" lang="ru" hidden="true"/>
         <name value="Акашийские Хроники Худшего преподователь магии" lang="ru" hidden="true"/>
+        <name value="Акашийские Хроники" lang="ru" hidden="true"/>
+        <char>Glenn Radars</char>
+        <char>Albert Franzer</char>
+        <description lang="ru">Систи посещает магическую академию, чтобы отточить свои навыки в магических искусствах, и надеется разгадать загадку таинственного Небесного замка. После неожиданного ухода из академии её любимого учителя, замена, Глен, оказывается вечно опаздывающим, ленивым, и казалось бы абсолютно некомпетентным подобием инструктора. Как получилось, что Глен был избран на эту должность лучшим магом академии?!</description>
     </title>
     <title name="Sodo Ato Onrain"
-        oname="オード・アート・オンライン"
+        oname="ソード・アート・オンライン"
         score="2"
         image="sao">
         <name value="Sword Art Online" lang="en"/>
@@ -81,11 +121,20 @@
         <name value="Мастера Меча Онлайн" lang="ru"/>
         <name value="Мастер Меча Онлайн" lang="ru" hidden="true"/>
         <name value="САО" lang="ru" hidden="true"/>
+        <char>Kirigaya Kazuto</char>
+        <char>Yuuki Asuna</char>
+        <char>Ayano Keiko</char>
+        <char>Shinozaki Rika</char>
+        <char>Tsuboi Ryountarou</char>
+        <char>Sachi</char>
+        <char>Andrew Gilbert Mills</char>
+        <char>Kayaba Akihiko</char>
+        <char>Yui</char>
     </title>
     <title name="Sodo Ato Onrain"
-        oname="オード・アート・オンライン"
+        oname="ソード・アート・オンライン"
         score="7"
-        image="sao_pl">
+        image="sao_pa">
         <name value="Sword Art Online" lang="en" hidden="true"/>
         <name value="Sword Art Online: Project Aliсization" lang="en"/>
         <name value="SAO" lang="en" hidden="true"/>
@@ -96,5 +145,6 @@
         <name value="Мастер Меча Онлайн" lang="ru" hidden="true"/>
         <name value="САО" lang="ru" hidden="true"/>
         <name value="Проект Алисизация" lang="ru" hidden="true"/>
+        <char>Alice Schuberg</char>
     </title>
 </list>

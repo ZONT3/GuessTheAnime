@@ -1,4 +1,22 @@
 <resources>
+    <string-array name="guess_hints_array">
+        <item>Show English Name</item>
+        <item>Show Japanese Name</item>
+        <item>Show Words from English Name</item>
+        <item>Show Words from Japanese Name</item>
+        <item>Show Description</item>
+        <item>Show Character Name</item>
+    </string-array>
+
+    <string-array name="guess_hints_desc_array">
+        <item>Shows you English title of this anime. You will able to type ONLY Japanese version. \nCost: %d</item>
+        <item>Shows you Japanese title of this anime. You will able to type ONLY OTHER LANGUAGE version. \nCost: %d</item>
+        <item>This option will show you all words, contains in this anime's English title in random order. \nCost: %d</item>
+        <item>This option will show you all words, contains in this anime's Japanese title in random order. \nCost: %d</item>
+        <item>Shows you a description of this anime. \nCost: %d</item>
+        <item>Shows you name of displayed characters. \nCost: %d</item>
+    </string-array>
+
     <string name="app_name">Guess The Anime</string>
     <string name="guess_wrong">Wrong answer!</string>
     <string name="guess_hint_title">Title…</string>
@@ -12,4 +30,15 @@
     <string name="guess_lol">Lol, how did you done that?</string>
     <string name="screenshot">Screenshot</string>
     <string name="guess_activity_title">Score: %d | Number: %d</string>
+    <string name="guess_end_title">That\'s all… For now!</string>
+    <string name="guess_end_message">Watch for updates, which will add more titles!</string>
+    <string name="guess_menu_hints">Hints…</string>
+    <string name="guess_hints_error_guessed">This anime has already guessed!</string>
+    <string name="guess_hints_purchase">Purchase</string>
+    <string name="guess_hints_error_nopoints">You don\'t have enough points!</string>
+    <string name="guess_hints_content_prefix">You now can access this hint for free for this anime.\n\n%s</string>
+    <string name="guess_hints_error_titlenotexist">ERROR: Title in this language does not exist</string>
+    <string name="guess_hints_error_descnotexist">ERROR: Description in your language and in english does not exists</string>
+    <string name="guess_hints_error_charnotexist">ERROR: Characters are not defined for this art</string>
+    <string name="guess_error_wronglang">Incorrect language! You must write answer on another.</string>
 </resources>

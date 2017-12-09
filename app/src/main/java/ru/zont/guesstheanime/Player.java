@@ -12,7 +12,8 @@ import java.util.ArrayList;
 
 public class Player implements Serializable {
     private ArrayList<Integer> completed = new ArrayList<>();
-    private int score = 0;
+    private ArrayList<int[]> hintsPurchased = new ArrayList<>();
+    private int score = 40;
 
     private void upd(Context context) {
         File save = new File(context.getFilesDir(), "player.sv");
@@ -33,6 +34,7 @@ public class Player implements Serializable {
 
             this.completed = newpl.completed;
             this.score = newpl.score;
+            this.hintsPurchased = newpl.hintsPurchased;
         } catch (Exception e) {e.printStackTrace();}
     }
 
@@ -54,6 +56,20 @@ public class Player implements Serializable {
         score += add;
         save(context);
         return score;
+    }
+
+    void purchaseHint(int anime, int hint, Context context) {
+        upd(context);
+        hintsPurchased.add(new int[]{anime, hint});
+        save(context);
+    }
+
+    boolean hintPurchased(int anime, int hint, Context context) {
+        upd(context);
+        for (int[] ints : hintsPurchased)
+            if (ints[0]==anime&&ints[1]==hint)
+                return true;
+        return false;
     }
 
     private void save(Context context) {

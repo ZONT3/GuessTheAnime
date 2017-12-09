@@ -49,10 +49,11 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout currLayout = findViewById(R.id.main_topLay);
         Button lastButt = findViewById(R.id.main_firstButt);
         for (int i=0; i<Anime.getTotalCount(this); i++) {
-            if (i>0&&i% MAX_BUTTONS_HORIZONTAL +1==0) {
+            if (i>0&&i%MAX_BUTTONS_HORIZONTAL==0) {
                 LinearLayout newLay = new LinearLayout(this);
                 newLay.setLayoutParams(currLayout.getLayoutParams());
                 holder.addView(newLay);
+                currLayout = newLay;
             }
 
             Button button = new Button(this);
@@ -67,12 +68,23 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(MainActivity.this, GuessActivity.class);
-                    intent.putExtra("i", finalI);
+                    intent.putExtra("animeID", finalI);
                     startActivity(intent);
                     finish();
                 }
             });
             currLayout.addView(button);
+        }
+
+        if (getIntent().getBooleanExtra("end", false)) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle(R.string.guess_end_title)
+                    .setIcon(android.R.drawable.ic_dialog_info)
+                    .setMessage(R.string.guess_end_message)
+                    .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {}
+                    }).create().show();
         }
     }
 
@@ -90,6 +102,8 @@ public class MainActivity extends AppCompatActivity {
                                     Toast.makeText(MainActivity.this, R.string.main_delete_suc, Toast.LENGTH_LONG).show();
                                 else
                                     Toast.makeText(MainActivity.this, R.string.main_delete_fail, Toast.LENGTH_LONG).show();
+                                startActivity(new Intent(MainActivity.this, MainActivity.class));
+                                finish();
                             }
                         })
                         .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {

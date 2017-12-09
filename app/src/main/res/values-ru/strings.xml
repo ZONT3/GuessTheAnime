@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="guess_hints_array">
+        <item>Показать Английское название</item>
+        <item>Показать Японское название</item>
+        <item>Показать буквы из Англ. назв-я</item>
+        <item>Показать буквы из Яп. назв-я</item>
+        <item>Показать описание</item>
+        <item>Показать имя персонажа</item>
+    </string-array>
+
+    <string-array name="guess_hints_desc_array">
+        <item>Тебе покажут название на Английском. Ты дожен будешь написать название НА ЯПОНСКОМ \nСтоимость: %d</item>
+        <item>Тебе покажут название на Японском. Ты дожен будешь написать название НА ЛЮБОМ ДРУГОМ ЯЗЫКЕ \nСтоимость: %d</item>
+        <item>Тебе покажут буквы из английского названия в рандомном порядке. \nСтоимость: %d</item>
+        <item>Тебе покажут буквы из японского названия в рандомном порядке. \nСтоимость: %d</item>
+        <item>Будет показано описание тайтлв. \nСтоимость: %d</item>
+        <item>Будет показано имя персонажа. \nСтоимость: %d</item>
+    </string-array>
+
+    <string name="app_name">Угадай Аниме</string>
+    <string name="guess_wrong">Неверно!</string>
+    <string name="guess_hint_title">Тайтл…</string>
+    <string name="guess_true">Правильно! Вы получаете %d поинт(а/ов)!</string>
+    <string name="main_reset_title">Удалить прогресс</string>
+    <string name="main_reset_message">Вы действительно хотите удалить ВЕСЬ прогресс?</string>
+    <string name="main_delete_fail">Удаление не произошло :/</string>
+    <string name="main_delete_suc">Профиль удален</string>
+    <string name="guess_next">Далее</string>
+    <string name="guess_lol">Лол, как ты нажал сюда?</string>
+    <string name="screenshot">))</string>
+    <string name="guess_activity_title">Очки: %d | Номер: %d</string>
+    <string name="guess_end_title">Это все… Пока что!</string>
+    <string name="guess_end_message">Следите за обновлениями, которые будут постоянно добавлять тайтлы!</string>
+    <string name="guess_menu_hints">Позсказки…</string>
+    <string name="guess_hints_error_guessed">Это аниме уже отгадано!</string>
+    <string name="guess_hints_purchase">Получить</string>
+    <string name="guess_hints_error_nopoints">У вас недостаточно очков</string>
+    <string name="guess_hints_content_prefix">Теперь вы можете бесплатно просматривать эту подсказку для этого аниме.\n\n%s</string>
+    <string name="guess_hints_error_titlenotexist">ОШИБКА: Название на этом языке осутствует в нашей базе</string>
+    <string name="guess_hints_error_descnotexist">ОШИБКА: Описание на вашем языке и на английском осутствует</string>
+    <string name="guess_hints_error_charnotexist">ОШИБКА: Персонажи не указаны для этого арта</string>
+</resources>
