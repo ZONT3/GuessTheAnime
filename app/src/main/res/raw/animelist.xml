@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <list>
-    <title name="Boku no Hero Academia"
+    <title name="Boku no Hiirou Akademia"
         oname="僕のヒーローアカデミア"
         score="5"
         image="bnha">
+        <name value="Boku no Hero Academia" lang="jp"/>
         <name value="My Hero Academia" lang="en"/>
         <name value="Моя Геройская Академия" lang="ru"/>
     </title>
-    <title name="Mahou tsukai no Yome"
+    <title name="Mahou Tsukai no Yome"
         oname="マホー使いの嫁"
         score="7"
         image="mny">
@@ -17,11 +18,83 @@
         <name value="Magus Bride" lang="en" hidden="true"/>
         <name value="Невеста Чародея" lang="ru"/>
     </title>
-    <title name="Blend S"
+    <title name="Burendo S"
         oname="ブレンド・S"
         score="3"
         image="bs">
         <name value="Blend S" lang="en"/>
         <name value="Садистская Смесь" lang="ru"/>
+    </title>
+    <title name="Kantai Corekushon"
+        oname="艦隊これくしょん"
+        score="5"
+        image="kc">
+        <name value="Kantai Collection" lang="en"/>
+        <name value="KanColle" lang="en"/>
+        <name value="艦これ" lang="jp"/>
+        <name value="Флотская Коллекция" lang="ru"/>
+        <name value="Бурятские Кораблики" hidden="true" lang="ru"/>
+    </title>
+    <title name="No Geimu no Raifu"
+        oname="ノ・ゲイム・ノ・ライフ"
+        score="6"
+        image="ngnl">
+        <name value="ノゲイムノライフ" lang="jp"/>
+        <name value="No Game No Life" lang="en"/>
+        <name value="Нет Игры - Нет Жизни" lang="ru"/>
+        <name value="Нет Игры Нет Жизни" lang="ru" hidden="true"/>
+        <name value="Без Игры Нет Жизни" lang="ru" hidden="true"/>
+    </title>
+    <title name="Kyoukai no Kanata"
+        oname="境界の彼方"
+        score="7"
+        image="knk">
+        <name value="Beyond the Boundary" lang="en"/>
+        <name value="За гранью" lang="ru"/>
+        <name value="Загранник" lang="ru" hidden="true"/>
+        <name value="За пределами" lang="ru" hidden="true"/>
+        <name value="По ту сторону границы" lang="ru" hidden="true"/>
+    </title>
+    <title name="Rokudenahi Majutsu Koushi to Kinki Kyouten"
+        oname="ロクでなし魔術講師と禁忌教典"
+        score="8"
+        image="rmktar">
+        <name value="Rokudenashi Majutsu Koushi to Akashic Records" lang="jp" hidden="true"/>
+        <name value="Rokudenashi Majutsu Koushi to Akashic Record" lang="jp" hidden="true"/>
+        <name value="Rokudenashi Majutsu Koushi to Akashikku Rekoudo" lang="jp" hidden="true"/>
+        <name value="ロクでなし魔術講師とアカシックレコード" lang="jp"/>
+        <name value="Akashic Records of Bastard Magical Instructor" lang="en" hidden="true"/>
+        <name value="Bastard Magical Instructor and Akashic Records" lang="en" hidden="true"/>
+        <name value="Akashic Records and Bastard Magical Instructor" lang="en"/>
+        <name value="Худший преподователь магии и Акашийские Хроники" lang="ru"/>
+        <name value="Худший преподователь магии и Хроники Акаши" lang="ru" hidden="true"/>
+        <name value="Акашийские Хроники и Худший преподователь магии" lang="ru" hidden="true"/>
+        <name value="Акашийские Хроники Худшего преподователь магии" lang="ru" hidden="true"/>
+    </title>
+    <title name="Sodo Ato Onrain"
+        oname="オード・アート・オンライン"
+        score="2"
+        image="sao">
+        <name value="Sword Art Online" lang="en"/>
+        <name value="SAO" lang="en"/>
+        <name value="ソードアートオンライン" lang="jp"/>
+        <name value="Мастера Меча Онлайн" lang="ru"/>
+        <name value="Мастер Меча Онлайн" lang="ru" hidden="true"/>
+        <name value="САО" lang="ru" hidden="true"/>
+    </title>
+    <title name="Sodo Ato Onrain"
+        oname="オード・アート・オンライン"
+        score="7"
+        image="sao_pl">
+        <name value="Sword Art Online" lang="en" hidden="true"/>
+        <name value="Sword Art Online: Project Aliсization" lang="en"/>
+        <name value="SAO" lang="en" hidden="true"/>
+        <name value="Project Alicization" lang="en" hidden="true"/>
+        <name value="ソードアートオンライン" lang="jp"/>
+        <name value="Мастера Меча Онлайн" lang="ru" hidden="true"/>
+        <name value="Мастера Меча Онлайн: Проект Алисизация" lang="ru"/>
+        <name value="Мастер Меча Онлайн" lang="ru" hidden="true"/>
+        <name value="САО" lang="ru" hidden="true"/>
+        <name value="Проект Алисизация" lang="ru" hidden="true"/>
     </title>
 </list>
