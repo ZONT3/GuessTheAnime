@@ -207,21 +207,21 @@ public class GuessActivity extends AppCompatActivity {
                 if (title1==null) {
                     builder.setMessage(R.string.guess_hints_error_titlenotexist);
                     fail = true;
-                } else setMessage(builder, title1, hint);;
+                } else setMessage(builder, title1, hint);
                 break;
             case HINT_RANDENG:
                 String title2 = anime.getTitle("en", true);
                 if (title2==null) {
                     builder.setMessage(R.string.guess_hints_error_titlenotexist);
                     fail = true;
-                } else setMessage(builder, title2, hint);;
+                } else setMessage(builder, shuffle(title2), hint);
                 break;
             case HINT_RANDJP:
                 String title3 = anime.getTitle("jp", true);
                 if (title3==null) {
                     builder.setMessage(R.string.guess_hints_error_titlenotexist);
                     fail = true;
-                } else setMessage(builder, title3, hint);;
+                } else setMessage(builder, shuffle(title3), hint);
                 break;
             case HINT_DESC:
                 String title4 = anime.getDescription(Locale.getDefault().getLanguage());
@@ -230,8 +230,8 @@ public class GuessActivity extends AppCompatActivity {
                     if (title4==null) {
                         builder.setMessage(R.string.guess_hints_error_descnotexist);
                         fail=true;
-                    } else setMessage(builder, title4, hint);;
-                } else setMessage(builder, title4, hint);;
+                    } else setMessage(builder, title4, hint);
+                } else setMessage(builder, title4, hint);
                 break;
             case HINT_CHARS:
                 StringBuilder title5 = new StringBuilder();
@@ -242,7 +242,7 @@ public class GuessActivity extends AppCompatActivity {
                 if (anime.characters.size()<=0) {
                     builder.setMessage(R.string.guess_hints_error_charnotexist);
                     fail = true;
-                } else setMessage(builder, title5.toString(), hint);;
+                } else setMessage(builder, title5.toString(), hint);
                 break;
         }
         builder.create().show();

@@ -5,10 +5,8 @@ import android.support.annotation.DrawableRes;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import java.nio.file.NotLinkException;
 import java.util.ArrayList;
 
 import javax.xml.parsers.DocumentBuilderFactory;

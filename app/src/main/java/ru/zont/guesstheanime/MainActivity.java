@@ -123,4 +123,8 @@ public class MainActivity extends AppCompatActivity {
         i.inflate(R.menu.main, menu);
         return true;
     }
+
+    public void reward(MenuItem item) {
+        startActivity(new Intent(MainActivity.this, RewardActivity.class));
+    }
 }

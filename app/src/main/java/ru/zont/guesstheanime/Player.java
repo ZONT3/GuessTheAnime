@@ -10,7 +10,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Player implements Serializable {
+class Player implements Serializable {
     private ArrayList<Integer> completed = new ArrayList<>();
     private ArrayList<int[]> hintsPurchased = new ArrayList<>();
     private int score = 40;

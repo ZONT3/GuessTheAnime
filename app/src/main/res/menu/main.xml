@@ -3,8 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:icon="@android:drawable/ic_menu_slideshow"
+        android:onClick="reward"
+        android:title="@string/main_reward"
+        app:showAsAction="ifRoom" />
+    <item
         android:id="@+id/main_menu_reset"
         android:icon="@android:drawable/ic_menu_delete"
-        android:title="Reset profile"
+        android:title="@string/main_reset"
         app:showAsAction="ifRoom" />
 </menu>

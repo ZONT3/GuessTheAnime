@@ -41,4 +41,7 @@
     <string name="guess_hints_error_descnotexist">ERROR: Description in your language and in english does not exists</string>
     <string name="guess_hints_error_charnotexist">ERROR: Characters are not defined for this art</string>
     <string name="guess_error_wronglang">Incorrect language! You must write answer on another.</string>
+    <string name="reward_fail">Video has failed to load</string>
+    <string name="main_reward">Get reward</string>
+    <string name="main_reset">Reset profile</string>
 </resources>

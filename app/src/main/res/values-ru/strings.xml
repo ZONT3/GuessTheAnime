@@ -40,4 +40,8 @@
     <string name="guess_hints_error_titlenotexist">ОШИБКА: Название на этом языке осутствует в нашей базе</string>
     <string name="guess_hints_error_descnotexist">ОШИБКА: Описание на вашем языке и на английском осутствует</string>
     <string name="guess_hints_error_charnotexist">ОШИБКА: Персонажи не указаны для этого арта</string>
+    <string name="guess_error_wronglang">Тебе было сказано не писать на этом языке!</string>
+    <string name="reward_fail">Загруска видео не удалась</string>
+    <string name="main_reward">Получить награду</string>
+    <string name="main_reset">Сбросить профиль</string>
 </resources>
