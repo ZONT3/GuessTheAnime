@@ -4,14 +4,24 @@
         oname="僕のヒーローアカデミア"
         score="5"
         image="bnha">
-        <name value="My Hero Academia" lang="en_US"/>
-        <name value="Моя Геройская Академия" lang="ru_RU"/>
+        <name value="My Hero Academia" lang="en"/>
+        <name value="Моя Геройская Академия" lang="ru"/>
     </title>
     <title name="Mahou tsukai no Yome"
         oname="マホー使いの嫁"
         score="7"
         image="mny">
-        <name value="The Ancient Magus' Bride" lang="en_US" />
-        <name value="Невеста Чародея" lang="ru_RU"/>
+        <name value="The Ancient Magus' Bride" lang="en" />
+        <name value="The Ancient Magus Bride" lang="en" hidden="true"/>
+        <name value="Magus' Bride" lang="en"/>
+        <name value="Magus Bride" lang="en" hidden="true"/>
+        <name value="Невеста Чародея" lang="ru"/>
+    </title>
+    <title name="Blend S"
+        oname="ブレンド・S"
+        score="3"
+        image="bs">
+        <name value="Blend S" lang="en"/>
+        <name value="Садистская Смесь" lang="ru"/>
     </title>
 </list>

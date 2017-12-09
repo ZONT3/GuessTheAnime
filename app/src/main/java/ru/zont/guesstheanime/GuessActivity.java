@@ -75,7 +75,7 @@ public class GuessActivity extends AppCompatActivity {
         if (res) {
             showTitle();
             player.setCompleted(i, this);
-            if (ab != null) ab.setTitle(getString(R.string.guess_activity_title, player.addScore(anime.bayannost, this), i));
+            if (ab != null) ab.setTitle(getString(R.string.guess_activity_title, player.addScore(anime.bayannost, this), i+1));
             lay.setVisibility(View.GONE);
             titleLay.setVisibility(View.VISIBLE);
             Toast.makeText(this, getString(R.string.guess_true, anime.bayannost), Toast.LENGTH_LONG).show();
@@ -107,7 +107,7 @@ public class GuessActivity extends AppCompatActivity {
         result.setText("");
 
         for (int j=0; j<anime.displayTitles.size(); j++) {
-            if (!anime.displayTitles.get(j)[1].equals(Locale.getDefault().toString())&&!anime.displayTitles.get(j)[1].equals("en_US"))
+            if (!anime.displayTitles.get(j)[1].equals(Locale.getDefault().getLanguage())&&!anime.displayTitles.get(j)[1].equals("en"))
                 continue;
             if (j>0) result.setText(result.getText().toString()+" / ");
             result.setText(result.getText().toString()+anime.displayTitles.get(j)[0]);
