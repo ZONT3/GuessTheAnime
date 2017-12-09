@@ -25,7 +25,7 @@ public class RewardActivity extends AppCompatActivity implements RewardedVideoAd
     }
 
     private void loadRewardedVideoAd() {
-        mRewardedVideoAd.loadAd("ca-app-pub-3940256099942544/5224354917",
+        mRewardedVideoAd.loadAd("ca-app-pub-7799305268524604/7125651560",
                 new AdRequest.Builder().build());
     }
 
@@ -56,7 +56,7 @@ public class RewardActivity extends AppCompatActivity implements RewardedVideoAd
 
     @Override
     public void onRewardedVideoAdLeftApplication() {
-
+        finish();
     }
 
     @Override
