@@ -151,9 +151,11 @@
         oname="ゲイト：自衛隊彼の地にて、斯く戦えり"
         score="7"
         image="gjknkt">
+        <name value="Gate" lang="en"/>
         <name value="Gate: Thus the JDSF Fought There!" lang="en"/>
         <name value="Gate Thus the JDSF Fought There" hidden="true" lang="en"/>
         <name value="Gate: Thus the JDSF Fought There" hidden="true" lang="en"/>
+        <name value="Врата" lang="ru"/>
         <name value="Врата: Там сражаются наши воины" lang="ru"/>
         <name value="Врата Там сражаются наши воины" hidden="true" lang="ru"/>
         <name value="Врата: Там бьются наши воины" hidden="true" lang="ru"/>
@@ -243,7 +245,7 @@
         <description lang="ru">Легендарная онлайн-игра «Иггдрасиль» неожиданно закрывается. Желая остаться в любимом мире подольше, игрок, управляющий персонажем по имени Момонга, решает оставаться в игре до полного отключения серверов. Момонга — лич, глава одной из топовых гильдий, представляющих в игре «тёмную» сторону. В момент отключения сервера он собрал всех своих прислужников в главном зале гильдии, сел на трон и стал ждать неизбежного.
             Но произошло невероятное: сервер не прервал подключение, игра продолжилась, а Момонга превратился в скелета, могущественного волшебника. Неигровые персонажи вдруг начали проявлять человеческие эмоции. Теперь безо всякой помощи, без друзей и без какой-либо информации о происходящем, Момонге придётся завоевать этот мир, чтобы найти выход. </description>
     </title>
-    <title name="マギ：The Labyrinth of Magic"
+    <title name="Magi：The Labyrinth of Magic"
         oname="マギ"
         score="4"
         image="mlom">
@@ -256,5 +258,77 @@
         <char>Morigana</char>
         <description lang="ru">По всему миру «арабских ночей» высятся несокрушимые башни, полные сокровищ и магических предметов. Откуда они взялись – неясно, но любой оставшийся в живых «покоритель донжонов» становится богат и знаменит. Именно такой судьбой грезит веселый Али-Баба, в одно прекрасное утро встретивший малыша, кушавшего в его повозке хозяйские арбузы. Аладдин, юный маг, вырвавшийся из храма, где рос в одиночестве, парнем оказался хорошим, но слегка наивным и жизни не знающим. Если бы не джинн Уго, сидевший во флейте Аладдина, в последующих приключениях ребята точно бы потеряли головы, а так и живы остались, и от злодеев ушли, и красотку прихватили за компанию! </description>
     </title>
-
+    <title name="To Love Ru"
+        oname="とらぶる"
+        score="5"
+        image="tlr">
+        <name value="ToLOVE-Ru" lang="en"/>
+        <name value="To LOVE-Ru" hidden="true" lang="en"/>
+        <name value="ToLOVE-Ru ~Trouble~" lang="en"/>
+        <name value="To LOVE-Ru ~Trouble~" hidden="true" lang="en"/>
+        <name value="ToLOVEる" lang="jp"/>
+        <name value="To LOVEる" hidden="true" lang="jp"/>
+        <name value="ToLOVEる　～とらぶる～" lang="jp"/>
+        <name value="To LOVEる　～とらぶる～" hidden="true" lang="jp"/>
+        <name value="とらぶる" hidden="true" lang="jp"/>
+        <name value="Любовные Неприятности" lang="ru"/>
+        <name value="Любовь и Прочие Неприятности" lang="ru"/>
+        <name value="Тулавру" hidden="true" lang="ru"/>
+        <name value="Тулав-ру" hidden="true" lang="ru"/>
+        <name value="Ту лав-ру" hidden="true" lang="ru"/>
+        <char>Konjiki no Yami</char>
+        <description lang="ru">Обычный ничем непримечательный старшеклассник Рито по уши влюблён в Харуну, но никак не может признаться ей в этом как не пытается — у него не хватает смелости. Как-то на досуге, когда он принимал ванну, размышляя о цели своей любви и ничего не подозревая, что в следующее мгновенье на него, как снег на голову, свалится девушка невероятной красоты — Лала, инопланетянка с планеты Девилюк, у которой на хвосте целая куча неприятностей. С этого момента жизнь Рито кардинально изменилась.</description>
+    </title>
+    <title name="Chuunibyou demo Koi ga Shitai!"
+        oname="中二病でも恋がしたい!"
+        score="4"
+        image="chdkgs">
+        <name value="Love, Chuunibyou and Other Delusions" lang="en"/>
+        <name value="Love, Chunibyo and Other Delusions" hidden="true" lang="en"/>
+        <name value="Chunibyo" hidden="true" lang="en"/>
+        <name value="Chuunibyou" hidden="true" lang="en"/>
+        <name value="Чудачество любви не помеха!" lang="ru"/>
+        <name value="Я не от мира сего, но тоже хочу любить" hidden="true" lang="ru"/>
+        <name value="Я не от мира сего но тоже хочу любить" hidden="true" lang="ru"/>
+        <name value="Я не от мира сего, но тоже любить хочу" hidden="true" lang="ru"/>
+        <name value="Я не от мира сего но тоже любить хочу!" lang="ru"/>
+        <name value="Я не от мира сего но тоже любить хочу" hidden="true" lang="ru"/>
+        <name value="Чудачество любви не помеха" hidden="true" lang="ru"/>
+        <name value="Синдром Восьмиклассника" lang="ru"/>
+        <char>Shichimiya Satone</char>
+        <char>Takanashi Rikka</char>
+        <description lang="ru">Каждый школьник когда-то встречался с «синдромом восьмиклассника», кто-то начинал резко перечитывать стопки книг, а кто-то проявлял успех в приготовлении пищи, кому-то хотелось ведрами хлестать кофе и т.д. Но изредка встречаются и запущенные случаи, когда ученик, возомнив себя волшебником или великим магом, начинает публично выкрикивать «заклинания» и настораживать одноклассников. Как раз к этому типу относился Тогаси Юта. Только теперь все позади! Мальчишка четко поставил перед собой цель забыть все старые бредни и начать жизнь нормального ученика с поступлением в старшую школу. Но не так все просто…</description>
+    </title>
+    <title name="Taimadou Gakuen 35 Shiken Shoutai"
+        oname="対魔導学園35試験小隊"
+        score="6"
+        image="ss">
+        <name value="35 Shinken Shoutai" hidden="true" lang="jp"/>
+        <name value="AntiMagic Academy 35th Test Platoon" lang="en"/>
+        <name value="35th Test Platoon" hidden="true" lang="en"/>
+        <name value="35 Test Platoon" hidden="true" lang="en"/>
+        <name value="35th Platoon" hidden="true" lang="en"/>
+        <name value="35 Platoon" hidden="true" lang="en"/>
+        <name value="35-й экспериментальный отряд антимагической академии" lang="ru"/>
+        <name value="35 экспериментальный отряд антимагической академии" hidden="true" lang="ru"/>
+        <name value="35-е экспериментальное подразделение" hidden="true" lang="ru"/>
+        <name value="35 экспериментальное подразделение" hidden="true" lang="ru"/>
+        <name value="35-й отряд" hidden="true" lang="ru"/>
+        <name value="35 отряд" hidden="true" lang="ru"/>
+    </title>
+    <title name="JoJo no Kimyou na Bouken"
+        oname="ジョジョの奇妙な冒険"
+        score="3"
+        image="jojo">
+        <name value="JoJo's Bizzare Adventure" lang="en"/>
+        <name value="JoJo" hidden="true" lang="en"/>
+        <name value="JoJos Bizzare Adventure" hidden="true" lang="en"/>
+        <name value="JoJo Bizzare Adventure" hidden="true" lang="en"/>
+        <name value="Невероятные Приключения ДжоДжо" lang="ru"/>
+        <name value="Странные приключения ДжоДжо" hidden="true" lang="ru"/>
+        <name value="ДжоДжо" hidden="true" lang="ru"/>
+        <name value="ЖоЖо" hidden="true" lang="ru"/>
+        <char>Wamuu</char>
+        <description lang="ru">Эта история берет своё начало в XIX веке, рассказывая нам о двух сводных братьях - Джонатане Джостаре и Дио Брандо...</description>
+    </title>
 </list>
