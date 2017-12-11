@@ -33,6 +33,7 @@
     <string name="guess_end_title">That\'s all… For now!</string>
     <string name="guess_end_message">Watch for updates, which will add more titles!</string>
     <string name="guess_menu_hints">Hints…</string>
+    <string name="guess_menu_info">About this title…</string>
     <string name="guess_hints_error_guessed">This anime has already guessed!</string>
     <string name="guess_hints_purchase">Purchase</string>
     <string name="guess_hints_error_nopoints">You don\'t have enough points!</string>
@@ -44,4 +45,7 @@
     <string name="reward_fail">Video has failed to load</string>
     <string name="main_reward">Get reward</string>
     <string name="main_reset">Reset profile</string>
+    <string name="info_titles">Titles</string>
+    <string name="info_desc">Description</string>
+    <string name="info_chars">Characters</string>
 </resources>

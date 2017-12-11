@@ -158,6 +158,17 @@ public class GuessActivity extends AppCompatActivity {
         finish();
     }
 
+    public void info(MenuItem item) {
+        if (!player.isCompleted(animeID, this)) {
+            Toast.makeText(this, R.string.guess_info_error_guessed, Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        Inteni intent = new Intent(GuessActivity.this, InfoActivity.class);
+        intent.putExtra("animeID", animeID);
+        startActivity(intent);
+    }
+
     public void hints(MenuItem item) {
         if (player.isCompleted(animeID, this)) {
             Toast.makeText(this, R.string.guess_hints_error_guessed, Toast.LENGTH_LONG).show();

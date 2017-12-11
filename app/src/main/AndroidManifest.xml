@@ -22,6 +22,9 @@
         <activity
             android:name=".GuessActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".InfoActivity"
+            android:screenOrientation="portrait" />
         <activity android:name=".RewardActivity" />
     </application>
 
