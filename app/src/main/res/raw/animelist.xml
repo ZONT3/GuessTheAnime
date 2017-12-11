@@ -217,6 +217,7 @@
         score="8"
         image="qui">
         <name value="Full-Time Magister" lang="en"/>
+        <name value="Full Time Magister" hidden="true" lang="en"/>
         <name value="Маг на полную ставку" lang="ru"/>
         <char>Mo Fyan</char>
         <description lang="ru">Мо Фань проснулся в привычном ему мире, который сильно изменился. Его школа стала школой магии, которая призывает всех стать могущественными магами. За пределами города бродят множество монстров. Мир науки и технологии превратился в мир магии!
@@ -331,4 +332,49 @@
         <char>Wamuu</char>
         <description lang="ru">Эта история берет своё начало в XIX веке, рассказывая нам о двух сводных братьях - Джонатане Джостаре и Дио Брандо...</description>
     </title>
+    <title name="Boku no Piko"
+    	oname="ぼくのぴこ"
+    	score="1"
+    	image="bnp">
+    	<name value="Boku no Pico" lang="en"/>
+    	<name value="Мой Пико" lang="ru"/>
+    	<char>TODO</char>
+    	<description lang="ru">Мальчик Пико, работающий в кафе деда, знакомится с человеком по имени Тамоцу, который позже его соблазняет, принимая за девушку. </description>
+    </title>
+    <title name="Ansatsu Kyoshitsu"
+    	oname="暗殺居室"
+    	score="5"
+    	image="ak">
+    	<name value="Assasination Classroom" lang="en"/>
+    	<name value="Класс Убийц" lang="ru"/>
+    	<name value="Убийство в классной комнате" lang="ru" hidden="true"/>
+    	<char>TODO</char>
+    	<description lang="ru">У учеников класса 3-E есть задание: убить своего учителя до выпускного. Он уже уничтожил Луну и пообещал уничтожить Землю, если никто его не убьёт в течение года. Но как этот класс неудачников сможет убить тентаклеобразного монстра, способного реагировать в 20 раз быстрее скорости звука, который, возможно, является лучшим учителем из всех, кто у них был?!</description>
+    </title>
+	<title name="Gakuen Mokushiroku"
+		oname="学園黙示録"
+		score="7"
+		image="hotd">
+		<name value="Highschool of the Dead" lang="en"/>
+		<name value="High school of the Dead"　hidden="true" lang="en"/>
+		<name value="HOTD" lang="en"/>
+		<name value="Школа Мертвецов" lang="ru"/>
+		<name value="Школа мертвяков" lang="ru" hidden="true"/>
+		<char>TODO</char>
+		<description lang="ru">Страшная болезнь, превращающая людей в зомби, вырвалась на свободу, и мир рухнул в одночасье. Беда неслышно подкралась и к частной академии Фудзими, лишь немногие школьники и учителя смогли распознать ее и бежать от толпы живых мертвецов. Дороги выживших разошлись. В центре сюжета – судьба тесной группы, невольный лидер которой, 17-летний Комуро Такаши, готов на все, чтобы спасти подругу детства Миямото Рэй. По пути на волю к ним присоединяются другие ученики – президент клуба кэндо Бусуджима Саэко, фанат оружия Хирано Кота и самозваный гений Такаги Сая. Пополнив ряды еще и школьной медсестрой Сидзукой Марикавой, беглецы вырываются в город – а там все только хуже.</description>
+	</title>
+	<title name="Gakusen Toshi Asterisk"
+		oname="学戦都市アスタリスク"
+		score="5"
+		image="gta">
+		<name value="Academy Battle City Asterisk" lang="en"/>
+		<name value="Battle City Asterisk" hidden="true" lang="en"/>
+		<name value="Asterisk" hidden="true" lang="en"/>
+		<name value="Боевая академия города Астериск" lang="ru"/>
+		<name value="Война в астериске" lang="ru"/>
+		<name value="Aстериск" hidden="true" lang="ru"/>
+		<name value="Боевой город Aстериск" hidden="true" lang="ru"/>
+		<char>TODO</char>
+		<description lang="ru">Когда-то давно на Землю обрушился сокрушительный метеоритный дождь. «Инверсия» – так позже он был назван людьми. Все вокруг было разрушено. Но вскоре из пепла старого мира возник новый. И вместе с ним стали появляться могущественные личности, «Генестелла», способные использовать силу «Маны», что высвободилась после катастрофы.</description>
+	</title>
 </list>
