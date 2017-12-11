@@ -77,11 +77,8 @@ public class GuessActivity extends AppCompatActivity {
 
         image.setImageResource(anime.image);
 
-        if (player.isCompleted(animeID, this)) {
+        if (player.isCompleted(animeID, this))
             showTitle();
-            lay.setVisibility(View.GONE);
-            titleLay.setVisibility(View.VISIBLE);
-        }
     }
 
     private void refreshBar() {
@@ -94,17 +91,13 @@ public class GuessActivity extends AppCompatActivity {
         boolean corrlang = !(!anime.getTitleLang(input.getText().toString()).equals("jp")&&player.hintPurchased(animeID, HINT_SHWENG, this))
                 && !(anime.getTitleLang(input.getText().toString()).equals("jp")&&player.hintPurchased(animeID, HINT_SHWJP, this));
         if (res && corrlang) {
-            showTitle();
             player.setCompleted(animeID, this);
-            if (ab != null)
-                ab.setTitle(getString(R.string.guess_activity_title, player.addScore(anime.bayannost, this), animeID + 1));
-            lay.setVisibility(View.GONE);
-            titleLay.setVisibility(View.VISIBLE);
+            player.addScore(anime.bayannost, this);
+            showTitle();
+            invalidateOptionsMenu();
             Toast.makeText(this, getString(R.string.guess_true, anime.bayannost), Toast.LENGTH_LONG).show();
-        } else if (res) {
-            Toast.makeText(this, R.string.guess_error_wronglang, Toast.LENGTH_LONG).show();
-        } else
-            Toast.makeText(this, R.string.guess_wrong, Toast.LENGTH_SHORT).show();
+        } else if (res) Toast.makeText(this, R.string.guess_error_wronglang, Toast.LENGTH_LONG).show();
+        else Toast.makeText(this, R.string.guess_wrong, Toast.LENGTH_SHORT).show();
     }
 
     public void next(View v) {
@@ -141,6 +134,25 @@ public class GuessActivity extends AppCompatActivity {
             result.setText(result.getText().toString()+anime.displayTitles.get(j)[0]);
             first = false;
         }
+
+        lay.setVisibility(View.GONE);
+        titleLay.setVisibility(View.VISIBLE);
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        MenuItem info = menu.findItem(R.id.guess_menu_info);
+        MenuItem hints = menu.findItem(R.id.guess_menu_hints);
+
+        if (player.isCompleted(animeID, GuessActivity.this)) {
+            info.setVisible(true);
+            hints.setVisible(false);
+        } else {
+            info.setVisible(false);
+            hints.setVisible(true);
+        }
+
+        return super.onPrepareOptionsMenu(menu);
     }
 
     @Override

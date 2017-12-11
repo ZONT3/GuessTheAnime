@@ -228,6 +228,7 @@
         score="5"
         image="ntnt">
         <name value="The Seven Deadly Sins" lang="en"/>
+        <name value="Seven Deadly Sins" hidden="true" lang="en"/>
         <name value="Семь смертных грехов" lang="ru"/>
         <char>Elizabeth Liones</char>
         <char>Meliodas</char>
@@ -287,6 +288,7 @@
         <name value="ToLOVEる ～とらぶる～" lang="jp"/>
         <name value="To LOVEる ～とらぶる～" hidden="true" lang="jp"/>
         <name value="とらぶる" hidden="true" lang="jp"/>
+        <name value="toraboru" hidden="true" lang="en"/>
         <name value="Любовные Неприятности" lang="ru"/>
         <name value="Любовь и Прочие Неприятности" lang="ru"/>
         <name value="Тулавру" hidden="true" lang="ru"/>
@@ -340,10 +342,12 @@
         image="dxd">
         <name value="Highschool DxD" lang="en"/>
         <name value="High School DxD" hidden="true" lang="en"/>
+        <name value="DxD" hidden="true" lang="en"/>
         <name value="Старшая Школа: Демоны против Падших" lang="ru"/>
         <name value="Демоныц Старшей Школы" lang="ru" hidden="true"/>
         <name value="Старшая Школа DxD" lang="ru" hidden="true"/>
         <name value="Высшая Школа DxD" lang="ru" hidden="true"/>
+        <name value="ДхД" lang="ru" hidden="true"/>
     </title>
     <title name="JoJo no Kimyou na Bouken"
         oname="ジョジョの奇妙な冒険"

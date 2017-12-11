@@ -51,7 +51,7 @@ public class RewardActivity extends AppCompatActivity implements RewardedVideoAd
 
     @Override
     public void onRewarded(RewardItem rewardItem) {
-        new Player().addScore(40, this);
+        new Player().addScore(60, this);
     }
 
     @Override
