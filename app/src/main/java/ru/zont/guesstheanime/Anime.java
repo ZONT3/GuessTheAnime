@@ -15,7 +15,7 @@ class Anime {
 
     @DrawableRes int image = R.mipmap.ic_launcher;
 
-    private ArrayList<String[]> titles = new ArrayList<>();
+    ArrayList<String[]> titles = new ArrayList<>();
     ArrayList<String[]> displayTitles = new ArrayList<>();
     private ArrayList<String[]> descriptions = new ArrayList<>();
     ArrayList<String> characters = new ArrayList<>();

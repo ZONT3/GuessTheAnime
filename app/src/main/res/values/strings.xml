@@ -48,4 +48,9 @@
     <string name="info_titles">Titles</string>
     <string name="info_desc">Description</string>
     <string name="info_chars">Characters</string>
+    <string name="guess_info_error_guessed">You must guess this title first!</string>
+    <string name="info_showall">Show All</string>
+    <string name="info_showall_hide">Hide</string>
+    <string name="info_descnotex">~Description is not defined~</string>
+    <string name="info_charsdoesnotex">~Characters is not defined or not present on art~</string>
 </resources>

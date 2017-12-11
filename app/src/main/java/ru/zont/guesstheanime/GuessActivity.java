@@ -164,7 +164,7 @@ public class GuessActivity extends AppCompatActivity {
             return;
         }
 
-        Inteni intent = new Intent(GuessActivity.this, InfoActivity.class);
+        Intent intent = new Intent(GuessActivity.this, InfoActivity.class);
         intent.putExtra("animeID", animeID);
         startActivity(intent);
     }

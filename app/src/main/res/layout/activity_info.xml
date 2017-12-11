@@ -1,51 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:layout_width="match_parent">
-
-	<ScrollView
+	xmlns:ads="http://schemas.android.com/apk/res-auto"
+	android:layout_centerHorizontal="true">
+	<LinearLayout
+		android:id="@+id/info_body"
 		android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerHorizontal="true">
-        <LinearLayout
-            android:id="@+id/info_body"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="centerHorizontal"
-            android:orientation="vertical">
-            <TextView
-            	android:layout_height="wrap_content"
-            	android:layout_width="wrap_content"
-            	android:gravity="center"
-            	android:text="@strings/info_titles"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle" />
-            <TextView
-            	android:layout_width="match_parent"
-            	android:layout_height="wrap_content"
-            	android:id="+@id/info_titles"
-            	android:gravity="center"/>
-            <TextView
-            	android:layout_height="wrap_content"
-            	android:layout_width="wrap_parent"
-            	android:gravity="center"
-            	android:text="@strings/info_desc"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle" />
-            <TextView
-            	android:layout_height="wrap_content"
-            	android:layout_width="match_parent"
-            	android:gravity="center"
-            	android:id="+@id/info_desc"/>
-            <TextView
-            	android:layout_width="match_parent"
-            	android:layout_height="wrap_content"
-            	android:gravity="center"
-            	android:text="@strings/info_chars"
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle" />
-            <TextView
-            	android:layout_height="wrap_content"
-            	android:layout_width="match_parent"
-            	android:gravity="center"
-            	android:id="+@id/info_chars"/>
-        </LinearLayout>
-    </ScrollView>
-</RelativeLayout>
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="@string/info_titles"
+			android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+			android:textColor="@android:color/black" />
+
+		<TextView
+			android:id="@+id/info_titles"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:paddingHorizontal="5dp" />
+
+		<ToggleButton
+			android:id="@+id/info_showall"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:checked="false"
+			android:text="@string/info_showall"
+			android:textOff="@string/info_showall"
+			android:textOn="@string/info_showall_hide" />
+		<com.google.android.gms.ads.AdView
+			android:id="@+id/info_ad"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			ads:adSize="BANNER"
+			ads:adUnitId="ca-app-pub-7799305268524604/9932752075" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="@string/info_desc"
+			android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+			android:textColor="@android:color/black" />
+
+		<TextView
+			android:id="@+id/info_desc"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:paddingHorizontal="5dp" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="@string/info_chars"
+			android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+			android:textColor="@android:color/black" />
+
+		<TextView
+			android:id="@+id/info_chars"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:paddingHorizontal="5dp" />
+	</LinearLayout>
+</ScrollView>

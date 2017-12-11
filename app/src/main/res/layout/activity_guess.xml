@@ -40,7 +40,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text=""
-                android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle" />
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+                android:textColor="@android:color/black" />
         </LinearLayout>
 
         <Button

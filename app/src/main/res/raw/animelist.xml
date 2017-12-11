@@ -105,7 +105,7 @@
         <name value="Худший преподователь магии и Хроники Акаши" lang="ru" hidden="true"/>
         <name value="Хроники Акаши" lang="ru" hidden="true"/>
         <name value="Акашийские Хроники и Худший преподователь магии" lang="ru" hidden="true"/>
-        <name value="Акашийские Хроники Худшего преподователь магии" lang="ru" hidden="true"/>
+        <name value="Акашийские Хроники Худшего преподователя магии" lang="ru" hidden="true"/>
         <name value="Акашийские Хроники" lang="ru" hidden="true"/>
         <char>Glenn Radars</char>
         <char>Albert Franzer</char>
@@ -207,7 +207,7 @@
         <name value="Ao no Ekusoshisuto" hidden="true" lang="jp"/>
         <name value="青のエクソシスト" hidden="true" lang="jp"/>
         <name value="Blue Exorcist" lang="en"/>
-        <name value="Ao no Exorcist" hidden="true" lang="en"/>
+        <name value="Ao no Exorcist" hidden="true" lang="jp"/>
         <name value="Синий экзорцист" lang="ru"/>
         <char>Kameki Izumo</char>
         <description lang="ru">15-летний Окумура Рин с раннего детства был хулиганом – буйным, вспыльчивым, готовым на все, чтобы отстоять свои «понятия». Парня сдерживало лишь влияние приемного отца-священника, да еще общение с братом-близнецом Юкио. Тем не менее, за стенами монастыря, где жили братья, старшего звали не иначе как «отродьем демона». Увы, звали пророчески – Рин оказался сыном Сатаны, правителя Геенны, который создал сосуд для своего явления в Ассию – материальный мир. Иерархи Церкви хотели уничтожить близнецов Окумура после рождения, но влиятельный отец Фудзимото поклялся воспитать их как людей и не отдавать адским силам. </description>
@@ -259,18 +259,33 @@
         <char>Morigana</char>
         <description lang="ru">По всему миру «арабских ночей» высятся несокрушимые башни, полные сокровищ и магических предметов. Откуда они взялись – неясно, но любой оставшийся в живых «покоритель донжонов» становится богат и знаменит. Именно такой судьбой грезит веселый Али-Баба, в одно прекрасное утро встретивший малыша, кушавшего в его повозке хозяйские арбузы. Аладдин, юный маг, вырвавшийся из храма, где рос в одиночестве, парнем оказался хорошим, но слегка наивным и жизни не знающим. Если бы не джинн Уго, сидевший во флейте Аладдина, в последующих приключениях ребята точно бы потеряли головы, а так и живы остались, и от злодеев ушли, и красотку прихватили за компанию! </description>
     </title>
+    <title name="Akame ga KIRU!"
+        oname="アカメがキル!"
+        score="6"
+        image="agk">
+        <name value="Akame ga KILL!" lang="en"/>
+        <name value="Akame ga KILL" hidden="true" lang="en"/>
+        <name value="Akame ga KIRU" hidden="true" lang="jp"/>
+        <name value="Убийца Акаме!" lang="ru"/>
+        <name value="Убийца Акаме" lang="ru" hidden="true"/>
+        <name value="Акаме Убивать!" lang="ru" hidden="true"/>
+        <char>Tatsumi</char>
+        <char>Akame</char>
+        <description lang="ru">Мечник Тацуми, простой парнишка из сельской местности отправляется в Столицу чтобы заработать денег для своей голодающей деревни. А добравшись туда вскоре узнает, что великая и красивая Столица это лишь видимость. Город погряз в коррупции, жестокости и беззаконии которые идут от премьер министра, что правит страной из-за кулис. Но как всем известно - «Один в поле не воин» и ничего тут не поделаешь, особенно когда твой враг глава государства или точнее тот, кто им прикрывается. Найдет ли Тацуми себе единомышленников и сможет-ли что-то изменить?</description>
+    </title>
     <title name="To Love Ru"
         oname="とらぶる"
         score="5"
         image="tlr">
         <name value="ToLOVE-Ru" lang="en"/>
         <name value="To LOVE-Ru" hidden="true" lang="en"/>
+        <name value="ToLOVERu" hidden="true" lang="en"/>
         <name value="ToLOVE-Ru ~Trouble~" lang="en"/>
         <name value="To LOVE-Ru ~Trouble~" hidden="true" lang="en"/>
         <name value="ToLOVEる" lang="jp"/>
         <name value="To LOVEる" hidden="true" lang="jp"/>
-        <name value="ToLOVEる　～とらぶる～" lang="jp"/>
-        <name value="To LOVEる　～とらぶる～" hidden="true" lang="jp"/>
+        <name value="ToLOVEる ～とらぶる～" lang="jp"/>
+        <name value="To LOVEる ～とらぶる～" hidden="true" lang="jp"/>
         <name value="とらぶる" hidden="true" lang="jp"/>
         <name value="Любовные Неприятности" lang="ru"/>
         <name value="Любовь и Прочие Неприятности" lang="ru"/>
@@ -316,6 +331,19 @@
         <name value="35 экспериментальное подразделение" hidden="true" lang="ru"/>
         <name value="35-й отряд" hidden="true" lang="ru"/>
         <name value="35 отряд" hidden="true" lang="ru"/>
+        <char>Nikaidou Mari</char>
+        <description lang="ru">Добро пожаловать в 35-е экспериментальное подразделение Таймадоу Гакуэн или же «Антимагическую академию». Академия является домом для отрядов, которые выслеживают и убивают, уничтожают или иным образом обезвреживают магические артефакты и тех, кто практикует магию. 35-е экспериментальное подразделение - это группа никому не нужных неудачников. Каждый член является специалистом в определенной области, и группа может стать величайшей командой, которая когда-либо существовала, но сперва им нужно преодолеть самую большую преграду: друг друга.</description>
+    </title>
+    <title name="Haisukuuru DxD"
+        oname="ハイスクールDxD"
+        score="7"
+        image="dxd">
+        <name value="Highschool DxD" lang="en"/>
+        <name value="High School DxD" hidden="true" lang="en"/>
+        <name value="Старшая Школа: Демоны против Падших" lang="ru"/>
+        <name value="Демоныц Старшей Школы" lang="ru" hidden="true"/>
+        <name value="Старшая Школа DxD" lang="ru" hidden="true"/>
+        <name value="Высшая Школа DxD" lang="ru" hidden="true"/>
     </title>
     <title name="JoJo no Kimyou na Bouken"
         oname="ジョジョの奇妙な冒険"
@@ -338,7 +366,8 @@
     	image="bnp">
     	<name value="Boku no Pico" lang="en"/>
     	<name value="Мой Пико" lang="ru"/>
-    	<char>TODO</char>
+    	<char>Pico</char>
+        <char>Tamotsu</char>
     	<description lang="ru">Мальчик Пико, работающий в кафе деда, знакомится с человеком по имени Тамоцу, который позже его соблазняет, принимая за девушку. </description>
     </title>
     <title name="Ansatsu Kyoshitsu"
@@ -348,7 +377,7 @@
     	<name value="Assasination Classroom" lang="en"/>
     	<name value="Класс Убийц" lang="ru"/>
     	<name value="Убийство в классной комнате" lang="ru" hidden="true"/>
-    	<char>TODO</char>
+    	<char>Ritsu</char>
     	<description lang="ru">У учеников класса 3-E есть задание: убить своего учителя до выпускного. Он уже уничтожил Луну и пообещал уничтожить Землю, если никто его не убьёт в течение года. Но как этот класс неудачников сможет убить тентаклеобразного монстра, способного реагировать в 20 раз быстрее скорости звука, который, возможно, является лучшим учителем из всех, кто у них был?!</description>
     </title>
 	<title name="Gakuen Mokushiroku"
@@ -356,11 +385,12 @@
 		score="7"
 		image="hotd">
 		<name value="Highschool of the Dead" lang="en"/>
-		<name value="High school of the Dead"　hidden="true" lang="en"/>
+		<name value="High school of the Dead" hidden="true" lang="en"/>
 		<name value="HOTD" lang="en"/>
 		<name value="Школа Мертвецов" lang="ru"/>
 		<name value="Школа мертвяков" lang="ru" hidden="true"/>
-		<char>TODO</char>
+		<char>Hirana Kouta</char>
+		<char>Takagi Saya</char>
 		<description lang="ru">Страшная болезнь, превращающая людей в зомби, вырвалась на свободу, и мир рухнул в одночасье. Беда неслышно подкралась и к частной академии Фудзими, лишь немногие школьники и учителя смогли распознать ее и бежать от толпы живых мертвецов. Дороги выживших разошлись. В центре сюжета – судьба тесной группы, невольный лидер которой, 17-летний Комуро Такаши, готов на все, чтобы спасти подругу детства Миямото Рэй. По пути на волю к ним присоединяются другие ученики – президент клуба кэндо Бусуджима Саэко, фанат оружия Хирано Кота и самозваный гений Такаги Сая. Пополнив ряды еще и школьной медсестрой Сидзукой Марикавой, беглецы вырываются в город – а там все только хуже.</description>
 	</title>
 	<title name="Gakusen Toshi Asterisk"
@@ -374,22 +404,9 @@
 		<name value="Война в астериске" lang="ru"/>
 		<name value="Aстериск" hidden="true" lang="ru"/>
 		<name value="Боевой город Aстериск" hidden="true" lang="ru"/>
-		<char>TODO</char>
+		<char>Toudou Kirin</char>
+        <char>Sasamiya Saya</char>
 		<description lang="ru">Когда-то давно на Землю обрушился сокрушительный метеоритный дождь. «Инверсия» – так позже он был назван людьми. Все вокруг было разрушено. Но вскоре из пепла старого мира возник новый. И вместе с ним стали появляться могущественные личности, «Генестелла», способные использовать силу «Маны», что высвободилась после катастрофы.</description>
-	</title>
-	<title name="Akame ga KIRU!"
-		oname="アカメがキル!"
-		score="6"
-		image="agk">
-		<name value="Akame ga KILL!" lang="en"/>
-		<name value="Akame ga KILL" hidden="true" lang="en"/>
-		<name value="Akame ga KIRU" hidden="true" lang="jp"/>
-		<name value="Убийца Акаме!" lang="ru"/>
-		<name value="Убийца Акаме" lang="ru"　hidden="true"/>
-		<name value="Акаме Убивать!" lang="ru"　hidden="true"/>
-		<name value="Акаме Убивать" lang="ru"　hidden="true"/>
-		<char>TODO</char>
-		<description lang="ru">Мечник Тацуми, простой парнишка из сельской местности отправляется в Столицу чтобы заработать денег для своей голодающей деревни. А добравшись туда вскоре узнает, что великая и красивая Столица это лишь видимость. Город погряз в коррупции, жестокости и беззаконии которые идут от премьер министра, что правит страной из-за кулис. Но как всем известно - «Один в поле не воин» и ничего тут не поделаешь, особенно когда твой враг глава государства или точнее тот, кто им прикрывается. Найдет ли Тацуми себе единомышленников и сможет-ли что-то изменить?</description>
 	</title>
 	<title name="Giruti Kuraun"
 		oname="ギルチクラウン"
@@ -397,7 +414,8 @@
 		image="gc">
 		<name value="Guilty Crown" lang="en"/>
 		<name value="Корона Грешника" lang="ru"/>
-		<char>TODO</char>
+		<char>Ouma Shuu</char>
+        <char>Yuzuriha Inori</char>
 		<description lang="ru">После эпидемии вируса «Апокалипсис» в 2029 году Страна Восходящего солнца оказалась банкротом и попала под внешнее управление. Частная организация GHQ, неизвестно откуда пришедшая к власти, ввела военное положение и безжалостно подавляет любую оппозицию. Тем не менее, даже десять лет спустя Токио регулярно сотрясают крупные и мелкие теракты, а ряды борцов Сопротивления лишь пополняются. Нежданно-негаданно в них попадает 17-летний Сю Ома, тихий парень, любитель видеомонтажа. Как водится, всему виною женщина – в данном случае Инори Юдзуриха, певица и сетевой идол, по совместительству – борец за свободу и член подпольной группировки «Гробовщики»!</description>		
 	</title>
 </list>

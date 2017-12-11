@@ -3,15 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/guess_menu_info"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:onClick="info"
+        android:title="@string/guess_menu_info"
+        app:showAsAction="ifRoom" />
+    <item
         android:id="@+id/guess_menu_hints"
         android:icon="@android:drawable/ic_menu_help"
         android:onClick="hints"
         android:title="@string/guess_menu_hints"
-        app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/guess_menu_hints"
-        android:icon="@android:drawable/ic_menu_info"
-        android:onClick="info"
-        android:title="@string/guess_menu_info"
         app:showAsAction="ifRoom" />
 </menu>
