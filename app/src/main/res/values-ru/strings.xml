@@ -44,4 +44,13 @@
     <string name="reward_fail">Загруска видео не удалась</string>
     <string name="main_reward">Получить награду</string>
     <string name="main_reset">Сбросить профиль</string>
+    <string name="guess_menu_info">Об этом тайтле…</string>
+    <string name="info_titles">Названия</string>
+    <string name="info_desc">Описание</string>
+    <string name="info_chars">Персонажи</string>
+    <string name="guess_info_error_guessed">Сначала отгадай тайтл!</string>
+    <string name="info_showall">Показать все</string>
+    <string name="info_showall_hide">Скрыть</string>
+    <string name="info_descnotex">~Описание осутствует~</string>
+    <string name="info_charsdoesnotex">~Персонажи осутствуют~</string>
 </resources>
