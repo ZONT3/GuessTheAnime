@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -79,25 +81,38 @@ public class GuessActivity extends AppCompatActivity {
 
         if (player.isCompleted(animeID, this))
             showTitle();
+
+        input.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                boolean res = anime.hasTitle(input.getText().toString());
+                boolean corrlang = !(!anime.getTitleLang(input.getText().toString()).equals("jp")&&player.hintPurchased(animeID, HINT_SHWENG, GuessActivity.this))
+                        && !(anime.getTitleLang(input.getText().toString()).equals("jp")&&player.hintPurchased(animeID, HINT_SHWJP, GuessActivity.this));
+                if (res && corrlang) {
+                    player.setCompleted(animeID, GuessActivity.this);
+                    player.addScore(anime.bayannost, GuessActivity.this);
+                    showTitle();
+                    invalidateOptionsMenu();
+                    refreshBar();
+                    Toast.makeText(GuessActivity.this, getString(R.string.guess_true, anime.bayannost), Toast.LENGTH_LONG).show();
+                } else if (res) Toast.makeText(GuessActivity.this, R.string.guess_error_wronglang, Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     private void refreshBar() {
         ab = getSupportActionBar();
         if (ab != null) ab.setTitle(getString(R.string.guess_activity_title, player.addScore(0, this), animeID +1));
-    }
-
-    public void enter(View v) {
-        boolean res = anime.hasTitle(input.getText().toString());
-        boolean corrlang = !(!anime.getTitleLang(input.getText().toString()).equals("jp")&&player.hintPurchased(animeID, HINT_SHWENG, this))
-                && !(anime.getTitleLang(input.getText().toString()).equals("jp")&&player.hintPurchased(animeID, HINT_SHWJP, this));
-        if (res && corrlang) {
-            player.setCompleted(animeID, this);
-            player.addScore(anime.bayannost, this);
-            showTitle();
-            invalidateOptionsMenu();
-            Toast.makeText(this, getString(R.string.guess_true, anime.bayannost), Toast.LENGTH_LONG).show();
-        } else if (res) Toast.makeText(this, R.string.guess_error_wronglang, Toast.LENGTH_LONG).show();
-        else Toast.makeText(this, R.string.guess_wrong, Toast.LENGTH_SHORT).show();
     }
 
     public void next(View v) {

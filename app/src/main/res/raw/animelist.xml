@@ -422,4 +422,62 @@
         <char>Yuzuriha Inori</char>
 		<description lang="ru">После эпидемии вируса «Апокалипсис» в 2029 году Страна Восходящего солнца оказалась банкротом и попала под внешнее управление. Частная организация GHQ, неизвестно откуда пришедшая к власти, ввела военное положение и безжалостно подавляет любую оппозицию. Тем не менее, даже десять лет спустя Токио регулярно сотрясают крупные и мелкие теракты, а ряды борцов Сопротивления лишь пополняются. Нежданно-негаданно в них попадает 17-летний Сю Ома, тихий парень, любитель видеомонтажа. Как водится, всему виною женщина – в данном случае Инори Юдзуриха, певица и сетевой идол, по совместительству – борец за свободу и член подпольной группировки «Гробовщики»!</description>		
 	</title>
+    <title name="Hentai Ouji to Warawanai Neko"
+        oname="変態王子と笑はない猫"
+        score="8"
+        image="hotwn">
+        <name value="The Hentai Prince and the Stony Cat" lang="en"/>
+        <name value="Принц-пошляк и кошка-несмеяна" lang="ru"/>
+        <name value="Принц пошляк и кошка несмеяна" hidden="true" lang="ru"/>
+        <name value="Хентайный принц и каменная кошка" hidden="true" lang="ru"/>
+        <name value="変態王子と笑わない猫" hidden="true" lang="jp"/>
+        <char>Azuki Azusa</char>
+        <char>Yokodera Youto</char>
+        <description lang="ru">Йокодера Йото частенько застревает в своих фантазиях, но за извращенца его почему-то никто не принимает. Вдруг, он узнает о статуе Кошки, которая якобы исполняет желания. Парень пошёл ей молиться, ведомый желанием осуществить свои извращения. Уже на подходе к статуе, Йото встречает Цуцукакуси Цукико, девушку, которая никогда просто так не выдаёт свои намерения.</description>
+    </title>
+    <title name="Shinmai Maou no Keiyakusha"
+        oname="新妹魔王の契約者"
+        score="8"
+        image="smnt">
+        <name value="新妹魔王のテスタメント" lang="jp"/>
+        <name value="Shinmai Maou no Testament" hidden="true" lang="jp"/>
+        <name value="The Testament of Sister New Devil" lang="en"/>
+        <name value="По велению адской сестры" hidden="true" lang="ru"/>
+        <name value="Новый завет Владыки тьмы, моей сестры" lang="ru"/>
+        <char>Narusa Maria</char>
+        <char>Nonaka Kurumi</char>
+        <description lang="ru">Тодзё Басара - ученик-первогодка старшей школы, которому одним прекрасным днём его отец задал вопрос: "Как он отнесется к тому, что у него появятся сестры?" Паренька это не особенно удивило, т.к. он знал об эксцентричности своего отца.</description>
+    </title>
+    <title name="Masamune-kun no Ribenji"
+        oname="政宗くんのリベンジ"
+        score="8"
+        image="mknr">
+        <name value="Masamune-kun no Revenge" lang="jp"/>
+        <name value="Masamune kun no Revenge" hidden="true" lang="jp"/>
+        <name value="Masamune-kun's Revenge" lang="en"/>
+        <name value="Месть Масамунe-куна" lang="ru"/>
+        <name value="Месть Масамунe куна" hidden="true" lang="ru"/>
+        <name value="Месть Масамунэ-куна" hidden="true" lang="ru"/>
+        <name value="Месть Масамунэ куна" hidden="true" lang="ru"/>
+        <name value="Месть Масамуне" hidden="true" lang="ru"/>
+        <name value="Masamune's Revenge" hidden="true" lang="en"/>
+        <name value="Masamune Revenge" hidden="true" lang="en"/>
+        <char>Koiwai Yoshino</char>
+        <description lang="ru">Макабе Масамуне прошёл через боль, связанную с девушкой - Адагаки Аки. Все это время он усиленно тренировался - для того что бы отомстить ей. Ради своей цели он отбросил своё прошлое и начал заниматься собой, чтобы стать красавчиком.
+
+            Переведясь в новую школу он сразу же встречает свою мишень для мести - Адагаки Аки. Он решает не тянуть со своим планом, ведь месть сама собой не свершится.</description>
+    </title>
+
+
+    <!--
+    <title name=""
+        oname=""
+        score=""
+        image="">
+        <name value="" lang=""/>
+        <name value="" hidden="true" lang=""/>
+        <char></char>
+        <description lang=""></description>
+    </title>
+    -->
 </list>
