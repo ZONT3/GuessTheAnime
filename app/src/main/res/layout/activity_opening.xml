@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="ru.zont.guesstheanime.OpeningActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/op_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-7799305268524604/3505501568" />
+
+    <Button
+        android:id="@+id/op_play"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:drawable/ic_media_play"
+        android:text="" />
+
+    <ProgressBar
+        android:id="@+id/op_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/op_input"
+        android:layout_centerHorizontal="true"
+        android:max="100"
+        android:progress="0" />
+
+    <EditText
+        android:id="@+id/op_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Button
+        android:id="@+id/op_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/guess_next"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/op_oname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/op_ad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="NAME / ONAME" />
+
+    <TextView
+        android:id="@+id/op_titles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/op_oname"
+        android:layout_centerHorizontal="true"
+        android:text="NAME / NAME"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
