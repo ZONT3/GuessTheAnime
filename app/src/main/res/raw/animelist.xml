@@ -482,6 +482,63 @@
         <char>TK</char>
         <description lang="ru">Не зря говорят, что японская школьная система – самая тяжелая и суровая. Так очнулся парень по фамилии Отонаси (имя он забыл) на том свете – а там снова школа! Вот только, несмотря на красивую обертку, школа эта больше походит на исправительную колонию для тех, кто слишком рано покинул бренный мир и не успел (или не захотел) познать правила и законы «реального общества». То есть покрутится в ней юный воспитуемый, научится ходить строем и участвовать во внеклассных мероприятиях согласно плану – и пора отправляться на этап согласно накопленной карме. Только почему-то не всем воспитуемым это нравится…</description>
     </title>
+    <title name="Gureeto Tiichaa Onizuka"
+        oname="グレート・チーチャー・オニズカ"
+        score="8"
+        image="gto">
+        <name value="Great Teacher Onizuka" lang="en"/>
+        <name value="Крутой учитель Онидзука" hidden="true" lang="ru"/>
+        <name value="GTO" hidden="true" lang="en"/>
+        <name value="ГТО" hidden="true" lang="ru"/>
+        <name value="Крутой учитель Онизука" lang="ru"/>
+        <char>Onizuka Eikichi</char>
+        <description lang="ru">Учитель школы, который уже успел примерить на себе роль ужасающего хулигана, на месте работы пытается поменять все на свой манер. Постепенно ему удается одерживать победы над безразличием, отсталостью, лицемерием и показухой, которые царят в учебном заведении.</description>
+    </title>
+    <title name="Bakuman"
+        oname="バクマン。"
+        score="9"
+        image="bkm">
+        <name value="Бакуман" lang="ru"/>
+        <name value="Bakuman" lang="en"/>
+        <name value="バクマン" lang="jp"/>
+        <char>Niizuma Eiji</char>
+        <description lang="ru">Один — художник, второй — начинающий писатель. Вместе они решают стать величайшими мангаками Японии и образуют дуэт под общим псевдонимом «Муто Ашироги». </description>
+    </title>
+    <title name="Youjo Senki"
+        oname="幼女戦記"
+        score="7"
+        image="ys">
+        <name value="Военная хроника маленькой девочки" lang="ru"/>
+        <name value="Танечка воплощение зла" hidden="true" lang="ru"/>
+        <name value="Youjo Senki: Saga of Tanya the Evil" lang="en"/>
+        <name value="Saga of Tanya the Evil" hidden="true" lang="en"/>
+        <char>Tanya Degurechaff</char>
+        <description lang="ru">На передовой сражается маленькая девчонка. Светлые волосы, голубые глаза, фарфоровое личико..</description>
+    </title>
+    <title name="Boku dake ga Inai Machi"
+        oname="僕だけがいない街"
+        score="7"
+        image="bdgim">
+        <name value="ERASED" lang="en"/>
+        <name value="The Town Where Only I am Missing" lang="en"/>
+        <name value="Город, в котором меня нет" lang="ru"/>
+        <name value="Город, в котором пропал лишь я" hidden="ture" lang="ru"/>
+        <name value="Город в котором пропал лишь я" hidden="true" lang="ru"/>
+        <name value="Город в котором меня нет" hidden="true" lang="ru"/>
+        <char>Hinazuki Kayo</char>
+        <description lang="ru">Он может, хоть и непроизвольно, «откатывать» время назад, что уж точно нельзя назвать обычным.Но для чего ему дана эта сила? Быть может, для того, чтобы исправить ошибки прошлого?</description>
+    </title>
+    <title name="Toukyo Guuru"
+        oname="トウキョグール"
+        score="1"
+        image="tg">
+        <name value="Tokyo Ghoul" lang="en"/>
+        <name value="Токийский монстр" hidden="true" lang="ru"/>
+        <name value="Токийский гуль" lang="ru"/>
+        <name value="Токийский Хуй" hidden="true" lang="ru"/>
+        <char>Kaneki Ken</char>
+        <description lang="ru">Чувак, может ты еще и не знаешь Боку но Пико, а?</description>
+    </title>
 
     <!--
     <title name=""

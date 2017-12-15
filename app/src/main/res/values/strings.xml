@@ -55,4 +55,6 @@
     <string name="info_showall_hide">Hide</string>
     <string name="info_descnotex">~Description is not defined~</string>
     <string name="info_charsdoesnotex">~Characters is not defined or not present on art~</string>
+    <string name="menu_art">By art</string>
+    <string name="menu_op">By Opening</string>
 </resources>
