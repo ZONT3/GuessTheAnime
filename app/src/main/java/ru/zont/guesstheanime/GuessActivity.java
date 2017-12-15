@@ -9,6 +9,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -30,13 +31,14 @@ import java.util.Locale;
 public class GuessActivity extends AppCompatActivity {
     InterstitialAd ia;
 
-    static final int[] HINT_COST = {40, 50, 20, 10, 30, 30};
-    static final int HINT_SHWENG = 0;
-    static final int HINT_SHWJP = 1;
-    static final int HINT_RANDENG = 2;
-    static final int HINT_RANDJP = 3;
-    static final int HINT_DESC = 4;
-    static final int HINT_CHARS = 5;
+    static final int[] HINT_COST = {60, 40, 50, 20, 10, 30, 30};
+    static final int HINT_SKIP = 0;
+    static final int HINT_SHWENG = 1;
+    static final int HINT_SHWJP = 2;
+    static final int HINT_RANDENG = 3;
+    static final int HINT_RANDJP = 4;
+    static final int HINT_DESC = 5;
+    static final int HINT_CHARS = 6;
 
     ImageView image;
     TextView result;
@@ -99,15 +101,20 @@ public class GuessActivity extends AppCompatActivity {
                 boolean corrlang = !(!anime.getTitleLang(input.getText().toString()).equals("jp")&&player.hintPurchased(animeID, HINT_SHWENG, GuessActivity.this))
                         && !(anime.getTitleLang(input.getText().toString()).equals("jp")&&player.hintPurchased(animeID, HINT_SHWJP, GuessActivity.this));
                 if (res && corrlang) {
-                    player.setCompleted(animeID, GuessActivity.this);
-                    player.addScore(anime.bayannost, GuessActivity.this);
-                    showTitle();
-                    invalidateOptionsMenu();
-                    refreshBar();
+                    complete();
                     Toast.makeText(GuessActivity.this, getString(R.string.guess_true, anime.bayannost), Toast.LENGTH_LONG).show();
                 } else if (res) Toast.makeText(GuessActivity.this, R.string.guess_error_wronglang, Toast.LENGTH_LONG).show();
+                else Log.d("input", "incorr");
             }
         });
+    }
+
+    private void complete() {
+        player.setCompleted(animeID, GuessActivity.this);
+        player.addScore(anime.bayannost, GuessActivity.this);
+        showTitle();
+        invalidateOptionsMenu();
+        refreshBar();
     }
 
     private void refreshBar() {
@@ -233,6 +240,9 @@ public class GuessActivity extends AppCompatActivity {
                 .setTitle(getResources().getStringArray(R.array.guess_hints_array)[hint]);
 
         switch (hint) {
+            case HINT_SKIP:
+                complete();
+                break;
             case HINT_SHWENG:
                 String title = anime.getTitle("en", true);
                 if (title==null) {
@@ -283,7 +293,9 @@ public class GuessActivity extends AppCompatActivity {
                 } else setMessage(builder, title5.toString(), hint);
                 break;
         }
-        builder.create().show();
+
+        if (hint!= HINT_SKIP)
+            builder.create().show();
 
         if (!fail && !player.hintPurchased(animeID, hint, this)) {
             player.purchaseHint(animeID, hint, this);

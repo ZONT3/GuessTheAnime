@@ -427,6 +427,7 @@
         score="8"
         image="hotwn">
         <name value="The Hentai Prince and the Stony Cat" lang="en"/>
+        <name value="Henneko" lang="en"/>
         <name value="Принц-пошляк и кошка-несмеяна" lang="ru"/>
         <name value="Принц пошляк и кошка несмеяна" hidden="true" lang="ru"/>
         <name value="Хентайный принц и каменная кошка" hidden="true" lang="ru"/>
@@ -467,7 +468,20 @@
 
             Переведясь в новую школу он сразу же встречает свою мишень для мести - Адагаки Аки. Он решает не тянуть со своим планом, ведь месть сама собой не свершится.</description>
     </title>
-
+    <title name="Enjeru Biitsu!"
+        oname="エンジェルビーツ!"
+        score="7"
+        image="ab">
+        <name value="Angel Beats!" lang="en"/>
+        <name value="Angel Beats" hidden="true" lang="en"/>
+        <name value="エンジェルビーツ" hidden="true" lang="jp"/>
+        <name value="Enjeru Bitsu" hidden="true" lang="jp"/>
+        <name value="Ангельсике Ритмы!" lang="ru"/>
+        <name value="Ангельскте Ритмы" hidden="true" lang="ru"/>
+        <name value="Ритмы Ангела" hidden="true" lang="ru"/>
+        <char>TK</char>
+        <description lang="ru">Не зря говорят, что японская школьная система – самая тяжелая и суровая. Так очнулся парень по фамилии Отонаси (имя он забыл) на том свете – а там снова школа! Вот только, несмотря на красивую обертку, школа эта больше походит на исправительную колонию для тех, кто слишком рано покинул бренный мир и не успел (или не захотел) познать правила и законы «реального общества». То есть покрутится в ней юный воспитуемый, научится ходить строем и участвовать во внеклассных мероприятиях согласно плану – и пора отправляться на этап согласно накопленной карме. Только почему-то не всем воспитуемым это нравится…</description>
+    </title>
 
     <!--
     <title name=""

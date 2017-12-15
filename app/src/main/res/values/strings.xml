@@ -1,5 +1,6 @@
 <resources>
     <string-array name="guess_hints_array">
+        <item>Skip that title</item>
         <item>Show English Name</item>
         <item>Show Japanese Name</item>
         <item>Show Words from English Name</item>
@@ -9,6 +10,7 @@
     </string-array>
 
     <string-array name="guess_hints_desc_array">
+        <item>This title will be guessed. \nCost: %d</item>
         <item>Shows you English title of this anime. You will able to type ONLY Japanese version. \nCost: %d</item>
         <item>Shows you Japanese title of this anime. You will able to type ONLY OTHER LANGUAGE version. \nCost: %d</item>
         <item>This option will show you all words, contains in this anime's English title in random order. \nCost: %d</item>

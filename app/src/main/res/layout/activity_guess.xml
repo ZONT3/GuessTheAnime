@@ -74,7 +74,7 @@
 
         <EditText
             android:id="@+id/guess_input"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
@@ -82,13 +82,6 @@
             android:hint="@string/guess_hint_title"
             android:inputType="textPersonName" />
 
-        <Button
-            android:id="@+id/guess_ok"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="4"
-            android:onClick="enter"
-            android:text="@string/enter" />
     </LinearLayout>
 
 
