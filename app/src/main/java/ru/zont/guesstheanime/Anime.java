@@ -8,6 +8,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 
@@ -46,6 +47,21 @@ class Anime {
             if (str[1].equals(lang))
                 return str[0];
         return res;
+    }
+
+    String getDisplayTitles() {
+        StringBuilder result = new StringBuilder();
+
+        boolean first = true;
+        for (int j=0; j<displayTitles.size(); j++) {
+            if (!displayTitles.get(j)[1].equals(Locale.getDefault().getLanguage())&&!displayTitles.get(j)[1].equals("en"))
+                continue;
+            if (!first) result.append(" / ");
+            result.append(displayTitles.get(j)[0]);
+            first = false;
+        }
+
+        return result.toString();
     }
 
     String getTitleLang(String title) {
@@ -95,7 +111,7 @@ class Anime {
 
     private static Element root = null;
 
-    private static Element getRoot(Context context) {
+    static Element getRoot(Context context) {
         if (root == null) {
             try {
                 Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(context.getResources().openRawResource(R.raw.animelist));

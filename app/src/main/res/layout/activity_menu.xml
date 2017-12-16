@@ -37,4 +37,12 @@
         app:adSize="BANNER"
         app:adUnitId="ca-app-pub-7799305268524604/5201726615" />
 
+    <TextView
+        android:id="@+id/menu_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/menu_score" />
+
 </RelativeLayout>

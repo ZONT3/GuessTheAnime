@@ -20,6 +20,20 @@
         <item>Будет показано имя персонажа. \nСтоимость: %d</item>
     </string-array>
 
+    <string-array name="op_hints_array">
+        <item>Пропустить опенинг</item>
+        <item>Показать название трека</item>
+        <item>Показать арт</item>
+        <item>Показать описание</item>
+    </string-array>
+
+    <string-array name="op_hints_desc_array">
+        <item>Пропустить этот опенинг за %d очков</item>
+        <item>Будет показано название трэка за %d очков</item>
+        <item>Будет показан арт из этого аниме.\nСтоимость: %d</item>
+        <item>Будет показано описание этого тайтла.\тСтоимость: %d</item>
+    </string-array>
+
     <string name="app_name">Угадай Аниме</string>
     <string name="guess_wrong">Неверно!</string>
     <string name="guess_hint_title">Тайтл…</string>
@@ -55,4 +69,10 @@
     <string name="info_showall_hide">Скрыть</string>
     <string name="info_descnotex">~Описание осутствует~</string>
     <string name="info_charsdoesnotex">~Персонажи осутствуют~</string>
+    <string name="menu_art">По Арту</string>
+    <string name="menu_op">По Опенингу</string>
+    <string name="op_hint">Тайтл.. (НЕ трек!)</string>
+    <string name="op_title">OP %d/%d | Очки: %d</string>
+    <string name="menu_score">Очки: %d</string>
+    <string name="op_truebut">Правильно, но ты уже отгадывал этот опенинг</string>
 </resources>

@@ -12,7 +12,9 @@ import java.util.ArrayList;
 
 class Player implements Serializable {
     private ArrayList<Integer> completed = new ArrayList<>();
+    private ArrayList<Integer> completedOps = new ArrayList<>();
     private ArrayList<int[]> hintsPurchased = new ArrayList<>();
+    private ArrayList<int[]> hintsPurchasedOps = new ArrayList<>();
     private int score = 40;
 
     private void upd(Context context) {
@@ -33,8 +35,10 @@ class Player implements Serializable {
             oin.close();
 
             this.completed = newpl.completed;
+            this.completedOps = newpl.completed;
             this.score = newpl.score;
             this.hintsPurchased = newpl.hintsPurchased;
+            this.hintsPurchasedOps = newpl.hintsPurchased;
         } catch (Exception e) {e.printStackTrace();}
     }
 
@@ -48,6 +52,19 @@ class Player implements Serializable {
         upd(context);
         if (!completed.contains(i))
             completed.add(i);
+        save(context);
+    }
+
+    boolean isCompletedOps(int i, Context context) {
+        if (i<0) return true;
+        upd(context);
+        return completedOps.contains(i);
+    }
+
+    void setCompletedOps(int i, Context context) {
+        upd(context);
+        if (!completedOps.contains(i))
+            completedOps.add(i);
         save(context);
     }
 
@@ -68,6 +85,20 @@ class Player implements Serializable {
         upd(context);
         for (int[] ints : hintsPurchased)
             if (ints[0]==anime&&ints[1]==hint)
+                return true;
+        return false;
+    }
+
+    void purchaseHintOps(int id, int hint, Context context) {
+        upd(context);
+        hintsPurchasedOps.add(new int[]{id, hint});
+        save(context);
+    }
+
+    boolean hintPurchasedOps(int id, int hint, Context context) {
+        upd(context);
+        for (int[] ints : hintsPurchasedOps)
+            if (ints[0]==id&&ints[1]==hint)
                 return true;
         return false;
     }

@@ -19,6 +19,20 @@
         <item>Shows you name of displayed characters. \nCost: %d</item>
     </string-array>
 
+    <string-array name="op_hints_array">
+        <item>Skip that opening</item>
+        <item>Show song name</item>
+        <item>Show art</item>
+        <item>Show description</item>
+    </string-array>
+
+    <string-array name="op_hints_desc_array">
+        <item>Cost: %d</item>
+        <item>Shows you name of this song.\nCost: %d</item>
+        <item>Will be shown art from this anime/manga.\nCost: %d</item>
+        <item>Will be shown description of this anime/manga.\nCost: %d</item>
+    </string-array>
+
     <string name="app_name">Guess The Anime</string>
     <string name="guess_wrong">Wrong answer!</string>
     <string name="guess_hint_title">Title…</string>
@@ -57,4 +71,8 @@
     <string name="info_charsdoesnotex">~Characters is not defined or not present on art~</string>
     <string name="menu_art">By art</string>
     <string name="menu_op">By Opening</string>
+    <string name="op_hint">Title.. (NOT song!)</string>
+    <string name="op_title">OP %d/%d | Score: %d</string>
+    <string name="menu_score">Score: %d</string>
+    <string name="op_truebut">True, but You have already guessed it before..</string>
 </resources>

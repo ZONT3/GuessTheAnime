@@ -5,21 +5,16 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Point;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -85,45 +80,5 @@ public class MainActivity extends AppCompatActivity {
                         public void onClick(DialogInterface dialogInterface, int i) {}
                     }).create().show();
         }
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.main_menu_reset:
-                new AlertDialog.Builder(MainActivity.this).setTitle(R.string.main_reset_title)
-                        .setMessage(R.string.main_reset_message)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
-                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                                if (Player.delete(MainActivity.this))
-                                    Toast.makeText(MainActivity.this, R.string.main_delete_suc, Toast.LENGTH_LONG).show();
-                                else
-                                    Toast.makeText(MainActivity.this, R.string.main_delete_fail, Toast.LENGTH_LONG).show();
-                                startActivity(new Intent(MainActivity.this, MainActivity.class));
-                                finish();
-                            }
-                        })
-                        .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {}
-                        }).create().show();
-                break;
-            default: return super.onOptionsItemSelected(item);
-        }
-
-        return true;
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater i = getMenuInflater();
-        i.inflate(R.menu.main, menu);
-        return true;
-    }
-
-    public void reward(MenuItem item) {
-        startActivity(new Intent(MainActivity.this, RewardActivity.class));
     }
 }
