@@ -75,4 +75,5 @@
     <string name="op_title">OP %d/%d | Очки: %d</string>
     <string name="menu_score">Очки: %d</string>
     <string name="op_truebut">Правильно, но ты уже отгадывал этот опенинг</string>
+    <string name="op_loading">Скачивание трека…</string>
 </resources>

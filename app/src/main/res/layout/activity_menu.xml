@@ -45,4 +45,12 @@
         android:layout_centerHorizontal="true"
         android:text="@string/menu_score" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menu_ad"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/iconcredit" />
+
 </RelativeLayout>

@@ -44,6 +44,7 @@ public class MenuActivity extends AppCompatActivity {
                         intent = new Intent(MenuActivity.this, MainActivity.class);
                         break;
                     case R.id.menu_op:
+                        OpeningActivity.played = new ArrayList<>();
                         intent = new Intent(MenuActivity.this, OpeningActivity.class);
                         break;
                 }
@@ -53,18 +54,8 @@ public class MenuActivity extends AppCompatActivity {
             }
         };
 
-        View.OnLongClickListener longlistener = new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                Toast.makeText(MenuActivity.this, "Done", Toast.LENGTH_SHORT).show();
-                OpeningActivity.played = new ArrayList<>();
-                return true;
-            }
-        };
-
         art.setOnClickListener(listener);
         op.setOnClickListener(listener);
-        op.setOnLongClickListener(longlistener);
 
         score.setText(getString(R.string.menu_score, new Player().addScore(0, this)));
     }

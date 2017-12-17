@@ -70,15 +70,22 @@ public class MainActivity extends AppCompatActivity {
             currLayout.addView(button);
         }
 
-        if (getIntent().getBooleanExtra("end", false)) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle(R.string.guess_end_title)
-                    .setIcon(android.R.drawable.ic_dialog_info)
-                    .setMessage(R.string.guess_end_message)
-                    .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {}
-                    }).create().show();
-        }
+        if (getIntent().getBooleanExtra("end", false))
+            endDialog(this);
+    }
+
+    static void endDialog(final AppCompatActivity act) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(act);
+        builder.setTitle(R.string.guess_end_title)
+                .setIcon(android.R.drawable.ic_dialog_info)
+                .setMessage(R.string.guess_end_message)
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        act.finish();
+                    }
+                }).create().show();
     }
 }
+
+

@@ -75,4 +75,7 @@
     <string name="op_title">OP %d/%d | Score: %d</string>
     <string name="menu_score">Score: %d</string>
     <string name="op_truebut">True, but You have already guessed it before..</string>
+    <string name="op_loading">Downloading song…</string>
+    <string name="op_err">An error accrued(\nTry to check your internet connection</string>
+    <string name="iconcredit">Icons made by Freepik from www.flaticon.com is licensed by Creative Commons 3.0 BY</string>
 </resources>

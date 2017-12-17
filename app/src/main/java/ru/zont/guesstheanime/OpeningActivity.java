@@ -19,18 +19,21 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Random;
 
-public class OpeningActivity extends AppCompatActivity implements TextWatcher{
+public class OpeningActivity extends AppCompatActivity implements TextWatcher, MediaPlayer.OnPreparedListener, MediaPlayer.OnErrorListener{
     private static final int[] HINT_COST = {60, 40, 40, 30};
     private static final int HINT_SKIP = 0;
     private static final int HINT_SONG = 1;
@@ -41,6 +44,8 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher{
 
     static ArrayList<Integer> played = new ArrayList<>();
 
+    private InterstitialAd ia;
+
     private ImageView root;
     private TextView name;
     private TextView oname;
@@ -49,6 +54,7 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher{
     private ProgressBar pb;
     private EditText input;
     private Button next;
+    private LinearLayout loading;
 
     private boolean guessed = false;
     private boolean playSt = false;
@@ -70,6 +76,7 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher{
         AdView av = findViewById(R.id.op_ad);
         AdRequest request = new AdRequest.Builder().build();
         av.loadAd(request);
+        ia = AdShower.load(this);
 
         root = findViewById(R.id.op_image);
         name = findViewById(R.id.op_titles);
@@ -79,36 +86,43 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher{
         pb = findViewById(R.id.op_pb);
         input = findViewById(R.id.op_input);
         next = findViewById(R.id.op_next);
+        loading = findViewById(R.id.op_loading);
 
         if (Opening.getAll(this).size()<=played.size()) {
-            Toast.makeText(this, "ENDED", Toast.LENGTH_SHORT).show();
-            finish();
+            MainActivity.endDialog(this);
             return;
         }
 
         player = new Player();
-        Opening op;
-        do op = Opening.getAll(this).get(new Random().nextInt(Opening.getAll(this).size()));
-        while (played.contains(op.id));
-        opening = op;
-        anime = new Anime(opening.animeID, this);
-        Log.d("GTO", anime.originalTitle+" / "+anime.originalRomTitle);
+        if (getIntent().getIntExtra("id", -1)<0) {
+            Opening op;
+            do op = Opening.getAll(this).get(new Random().nextInt(Opening.getAll(this).size()));
+            while (played.contains(op.id));
+            opening = op;
+            anime = new Anime(opening.animeID, this);
+            Log.d("GTO", anime.originalTitle + " / " + anime.originalRomTitle);
+        } else opening = Opening.get(getIntent().getIntExtra("id", -1));
 
         refreshLayout();
         input.addTextChangedListener(this);
 
-        mp = MediaPlayer.create(this, opening.resource);
-        mp.seekTo((int) opening.start);
+        try {
+            play.setEnabled(false);
+            loading.setVisibility(View.VISIBLE);
 
-        refresher = new Refresher();
-        refresher.execute();
+            mp = new MediaPlayer();
+            mp.setDataSource(opening.resource);
+            mp.setOnPreparedListener(this);
+            mp.setOnErrorListener(this);
+            mp.prepareAsync();
+        } catch (IOException e) {e.printStackTrace();}
 
         refreshBar();
     }
 
     @SuppressLint("SetTextI18n")
     private void refreshLayout() {
-        oname.setText(anime.originalTitle + "/" +anime.originalTitle);
+        oname.setText(anime.originalTitle + "/" +anime.originalRomTitle);
         name.setText(anime.getDisplayTitles());
         song.setText(opening.song);
         root.setImageResource(anime.image);
@@ -136,25 +150,35 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher{
     }
 
     public void onPlayClick(View v) {
-        playSt = !playSt;
-        play.setBackgroundResource(playSt ? android.R.drawable.ic_media_pause
-                : android.R.drawable.ic_media_play);
+        if (!pb.isIndeterminate()) {
+            playSt = !playSt;
+            play.setBackgroundResource(playSt ? R.drawable.button_pause
+                    : R.drawable.button_play);
+        } else {
+            mp.seekTo((int) opening.start);
+            playSt = true;
+            play.setBackgroundResource(R.drawable.button_pause);
+        }
+
         refreshPlayer();
-        Log.d("GTO", "POS:"+mp.getCurrentPosition());
+        Log.d("GTO", "POS:" + mp.getCurrentPosition());
     }
 
     private void refreshPlayer() {
-        if (opening.end<=0||guessed)
-            pb.setMax(mp.getDuration());
-        else pb.setMax((int) (opening.end-opening.start));
-        pb.setProgress((int) (mp.getCurrentPosition()-opening.start));
+        try {
+            if (opening.end <= 0 || guessed)
+                pb.setMax(mp.getDuration());
+            else pb.setMax((int) (opening.end - opening.start));
+            pb.setProgress((int) (mp.getCurrentPosition() - opening.start));
 
-        if (!pb.isIndeterminate()&&mp.getCurrentPosition()>=opening.end&&!guessed&&opening.end>0)
-            pb.setIndeterminate(true);
-        else if (pb.isIndeterminate()&&!(mp.getCurrentPosition()>=opening.end&&!guessed&&opening.end>0))
-            pb.setIndeterminate(false);
+            if (!pb.isIndeterminate() && mp.getCurrentPosition() >= opening.end && !guessed && opening.end > 0) {
+                pb.setIndeterminate(true);
+                play.setBackgroundResource(R.drawable.button_replay);
+            } else if (pb.isIndeterminate() && !(mp.getCurrentPosition() >= opening.end && !guessed && opening.end > 0))
+                pb.setIndeterminate(false);
 
-        setPlay(playSt && (mp.getCurrentPosition()<opening.end||guessed||opening.end<=0));
+            setPlay(playSt && (mp.getCurrentPosition() < opening.end || guessed || opening.end <= 0));
+        } catch (Exception e) {e.printStackTrace();}
     }
 
     private void setPlay(boolean play) {
@@ -191,6 +215,24 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher{
     }
 
     @Override
+    public void onPrepared(MediaPlayer mediaPlayer) {
+        refresher = new Refresher();
+        refresher.execute();
+        mediaPlayer.seekTo((int) opening.start);
+        loading.setVisibility(View.GONE);
+        play.setEnabled(true);
+    }
+
+    @Override
+    public boolean onError(MediaPlayer mediaPlayer, int i, int i1) {
+        if (refresher!=null) refresher.cancel(false);
+        mp.release();
+        Toast.makeText(this, R.string.op_err, Toast.LENGTH_LONG).show();
+        finish();
+        return false;
+    }
+
+    @Override
     public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
 
     @Override
@@ -206,12 +248,16 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher{
             refreshLayout();
             refreshBar();
             invalidateOptionsMenu();
+            play.setBackgroundResource(playSt ? R.drawable.button_pause
+                    : R.drawable.button_play);
             Toast.makeText(this, getString(R.string.guess_true, opening.score), Toast.LENGTH_LONG).show();
         } else if (res) {
             guessed = true;
             refreshLayout();
             refreshBar();
             invalidateOptionsMenu();
+            play.setBackgroundResource(playSt ? R.drawable.button_pause
+                    : R.drawable.button_play);
             Toast.makeText(this, R.string.op_truebut, Toast.LENGTH_LONG).show();
         } else Log.d("input", "incorr");
     }
@@ -292,6 +338,8 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher{
                 guessed = true;
                 refreshLayout();
                 invalidateOptionsMenu();
+                play.setBackgroundResource(playSt ? R.drawable.button_pause
+                        : R.drawable.button_play);
                 break;
             case HINT_SONG:
             case HINT_ART:
@@ -329,26 +377,47 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher{
 
     public void onNext(View v) {
         OpeningActivity.played.add(opening.id);
-        refresher.cancel(false);
-        waitRefresher();
-        mp.release();
+        if (refresher!=null) {
+            refresher.cancel(false);
+            waitForRefresher();
+        }
+        releaseMP();
         startActivity(new Intent(OpeningActivity.this, OpeningActivity.class));
+        ia.show();
         finish();
     }
 
     @Override
     public void onBackPressed() {
-        refresher.cancel(false);
-        waitRefresher();
-        mp.release();
+        if (refresher!=null) {
+            refresher.cancel(false);
+            waitForRefresher();
+        }
+        releaseMP();
         finish();
     }
 
-    private void waitRefresher() {
-        while (refresher.isRunning) {
-            Log.d("GTO", "waiting for refresher to stop...");
-            try {Thread.sleep(TICK);
-            } catch (InterruptedException e) {e.printStackTrace();}
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        releaseMP();
+    }
+
+    private void releaseMP() {
+        if (mp != null) {
+            try {
+                mp.release();
+                mp = null;
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
+    }
+
+    private void waitForRefresher() {
+        try {
+            while (refresher.isRunning)
+                Thread.sleep(TICK*2);
+        } catch (Exception e) {e.printStackTrace();}
     }
 }

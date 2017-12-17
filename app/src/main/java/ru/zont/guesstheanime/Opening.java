@@ -1,7 +1,6 @@
 package ru.zont.guesstheanime;
 
 import android.content.Context;
-import android.support.annotation.RawRes;
 
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -16,7 +15,7 @@ class Opening {
     long start = 0;
     long end = -1;
     int score;
-    @RawRes int resource;
+    String resource;
 
     private Opening(int i, int j, String song) {
         id = Integer.valueOf(i+""+j);
@@ -37,8 +36,8 @@ class Opening {
                     Element op = (Element) title.getElementsByTagName("opening").item(j);
                     Opening opening = new Opening(i, j, op.getAttribute("song"));
                     opening.animeID = i;
-                    opening.resource = context.getResources().getIdentifier(title.getAttribute("image"), "raw", context.getPackageName());
-                    if (j>0) opening.resource = context.getResources().getIdentifier(title.getAttribute("image")+"_"+j, "raw", context.getPackageName());
+                    opening.resource = "http://dltngz.clan.su/gtaoa/"+title.getAttribute("image")+".mp3";
+                    if (j>0) opening.resource = "http://dltngz.clan.su/gtaoa/"+title.getAttribute("image")+"_"+j+".mp3";
                     if (op.hasAttribute("start")) opening.start = Long.parseLong(op.getAttribute("start"));
                     if (op.hasAttribute("end")) opening.end = Long.parseLong(op.getAttribute("end"));
                     if (op.hasAttribute("score")) opening.score = Integer.valueOf(op.getAttribute("score"));
@@ -50,9 +49,9 @@ class Opening {
         return all;
     }
 
-//    static Opening get(int id) {
-//        for (Opening op : all)
-//            if (op.id==id) return op;
-//        return null;
-//    }
+    static Opening get(int id) {
+        for (Opening op : all)
+            if (op.id==id) return op;
+        return null;
+    }
 }
