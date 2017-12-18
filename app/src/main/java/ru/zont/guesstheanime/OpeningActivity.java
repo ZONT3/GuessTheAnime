@@ -142,11 +142,6 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
             input.setVisibility(View.VISIBLE);
             root.setVisibility(View.INVISIBLE);
         }
-
-        if (player.hintPurchasedOps(opening.id, HINT_ART, this))
-            root.setVisibility(View.VISIBLE);
-        if (player.hintPurchasedOps(opening.id, HINT_SONG, this))
-            song.setVisibility(View.VISIBLE);
     }
 
     public void onPlayClick(View v) {
@@ -250,6 +245,7 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
             invalidateOptionsMenu();
             play.setBackgroundResource(playSt ? R.drawable.button_pause
                     : R.drawable.button_play);
+            play.setAlpha((float) 0.75);
             Toast.makeText(this, getString(R.string.guess_true, opening.score), Toast.LENGTH_LONG).show();
         } else if (res) {
             guessed = true;
@@ -258,6 +254,7 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
             invalidateOptionsMenu();
             play.setBackgroundResource(playSt ? R.drawable.button_pause
                     : R.drawable.button_play);
+            play.setAlpha((float) 0.75);
             Toast.makeText(this, R.string.op_truebut, Toast.LENGTH_LONG).show();
         } else Log.d("input", "incorr");
     }
@@ -331,7 +328,6 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setPositiveButton(android.R.string.ok, null)
                 .setTitle(getResources().getStringArray(R.array.op_hints_array)[hint]);
-        boolean refresh = false;
 
         switch (hint) {
             case HINT_SKIP:
@@ -342,8 +338,10 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
                         : R.drawable.button_play);
                 break;
             case HINT_SONG:
+                song.setVisibility(View.VISIBLE);
+                break;
             case HINT_ART:
-                refresh = true;
+                root.setVisibility(View.VISIBLE);
                 break;
             case HINT_DESC:
                 String title4 = anime.getDescription(Locale.getDefault().getLanguage());
@@ -366,7 +364,6 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
         }
 
         refreshBar();
-        if (refresh) refreshLayout();
     }
 
     private void setMessage(AlertDialog.Builder builder, String title, int hint) {

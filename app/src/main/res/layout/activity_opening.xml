@@ -15,9 +15,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:contentDescription="@string/guess_lol"
         android:visibility="invisible"
-        app:srcCompat="@drawable/agk"
-        android:contentDescription="@string/guess_lol" />
+        app:srcCompat="@drawable/agk" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/op_ad"

@@ -19,14 +19,16 @@
             style="@android:style/Widget.DeviceDefault.Button.Borderless"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="@string/menu_art" />
+            android:text="@string/menu_art"
+            android:textColor="@android:color/black" />
 
         <Button
             android:id="@+id/menu_op"
             style="@android:style/Widget.DeviceDefault.Button.Borderless"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="@string/menu_op" />
+            android:text="@string/menu_op"
+            android:textColor="@android:color/black" />
     </LinearLayout>
 
     <com.google.android.gms.ads.AdView
