@@ -97,7 +97,7 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
         if (getIntent().getIntExtra("id", -1)<0) {
             Opening op;
             do op = Opening.getAll(this).get(new Random().nextInt(Opening.getAll(this).size()));
-            while (played.contains(op.id));
+            while (player.opsCompletedCount(this)>=Opening.getAll(this).size() ? played.contains(op.id) : player.isCompletedOps(op.id, this));
             opening = op;
             anime = new Anime(opening.animeID, this);
             Log.d("GTO", anime.originalTitle + " / " + anime.originalRomTitle);
@@ -188,7 +188,12 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
 
     private void refreshBar() {
         ab = getSupportActionBar();
-        if (ab != null) ab.setTitle(getString(R.string.op_title, played.size()+1, Opening.getAll(this).size(), player.addScore(0, this)));
+        if (ab == null) return;
+        ab.setTitle(getString(R.string.op_title,
+                player.opsCompletedCount(this)>=Opening.getAll(this).size()
+                ? played.size()+1 : player.opsCompletedCount(this)+1,
+                Opening.getAll(this).size(),
+                player.addScore(0, this)));
     }
 
     @SuppressLint("StaticFieldLeak")
@@ -243,7 +248,6 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
         boolean res = anime.hasTitle(input.getText().toString());
         if (res && !player.isCompletedOps(opening.id, OpeningActivity.this)) {
             guessed = true;
-            player.setCompletedOps(opening.id, OpeningActivity.this);
             player.addScore(opening.score, OpeningActivity.this);
             refreshLayout();
             refreshBar();
@@ -377,6 +381,8 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
 
     public void onNext(View v) {
         OpeningActivity.played.add(opening.id);
+        if (!player.isCompletedOps(opening.id, this))
+            player.setCompletedOps(opening.id, OpeningActivity.this);
         if (refresher!=null) {
             refresher.cancel(false);
             waitForRefresher();

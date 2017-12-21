@@ -68,6 +68,11 @@ class Player implements Serializable {
         save(context);
     }
 
+    int opsCompletedCount(Context context) {
+        upd(context);
+        return completedOps.size();
+    }
+
     int addScore(int add, Context context) {
         upd(context);
         score += add;
