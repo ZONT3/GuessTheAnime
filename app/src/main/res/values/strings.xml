@@ -78,4 +78,5 @@
     <string name="op_loading">Downloading song…</string>
     <string name="op_err">An error accrued(\nTry to check your internet connection</string>
     <string name="iconcredit" translatable="false">Icons made by Freepik from www.flaticon.com is licensed by Creative Commons 3.0 BY</string>
+    <string name="op_skip">Skip</string>
 </resources>

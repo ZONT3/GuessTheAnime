@@ -62,11 +62,14 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
     ActionBar ab;
 
     private Anime anime;
+    private static Opening prev;
     private Opening opening;
     private Player player;
 
     private MediaPlayer mp;
     Refresher refresher;
+
+    private static final boolean DEBUG = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,8 +100,11 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
         if (getIntent().getIntExtra("id", -1)<0) {
             Opening op;
             do op = Opening.getAll(this).get(new Random().nextInt(Opening.getAll(this).size()));
-            while (player.opsCompletedCount(this)>=Opening.getAll(this).size() ? played.contains(op.id) : player.isCompletedOps(op.id, this));
+            while (player.opsCompletedCount(this)>=Opening.getAll(this).size() ?
+                    played.contains(op.id) : player.isCompletedOps(op.id, this)
+                    || op == prev);
             opening = op;
+            prev = op;
             anime = new Anime(opening.animeID, this);
             Log.d("GTO", anime.originalTitle + " / " + anime.originalRomTitle);
         } else opening = Opening.get(getIntent().getIntExtra("id", -1));
@@ -243,7 +249,7 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
         boolean res = anime.hasTitle(input.getText().toString());
         if (res && !player.isCompletedOps(opening.id, OpeningActivity.this)) {
             guessed = true;
-            player.addScore(opening.score, OpeningActivity.this);
+            if (!DEBUG) player.addScore(opening.score, OpeningActivity.this);
             refreshLayout();
             refreshBar();
             invalidateOptionsMenu();
@@ -267,13 +273,16 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
     public boolean onPrepareOptionsMenu(Menu menu) {
         MenuItem info = menu.findItem(R.id.op_menu_info);
         MenuItem hints = menu.findItem(R.id.op_menu_hints);
+        MenuItem skip = menu.findItem(R.id.op_menu_skip);
 
         if (guessed) {
             info.setVisible(true);
             hints.setVisible(false);
+            skip.setVisible(false);
         } else {
             info.setVisible(false);
             hints.setVisible(true);
+            skip.setVisible(true);
         }
 
         return super.onPrepareOptionsMenu(menu);
@@ -295,6 +304,11 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
         Intent intent = new Intent(OpeningActivity.this, InfoActivity.class);
         intent.putExtra("animeID", opening.animeID);
         startActivity(intent);
+    }
+
+    public void skip(MenuItem item) {
+        onNext(null);
+
     }
 
     public void hints(MenuItem item) {
@@ -377,9 +391,11 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
     }
 
     public void onNext(View v) {
-        OpeningActivity.played.add(opening.id);
-        if (!player.isCompletedOps(opening.id, this))
-            player.setCompletedOps(opening.id, OpeningActivity.this);
+        if (guessed) {
+            OpeningActivity.played.add(opening.id);
+            if (!player.isCompletedOps(opening.id, this) && !DEBUG)
+                player.setCompletedOps(opening.id, OpeningActivity.this);
+        }
         if (refresher!=null) {
             refresher.cancel(false);
             waitForRefresher();

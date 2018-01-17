@@ -11,6 +11,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 class Player implements Serializable {
+    private int version;
+
     private ArrayList<Integer> completed = new ArrayList<>();
     private ArrayList<Integer> completedOps = new ArrayList<>();
     private ArrayList<int[]> hintsPurchased = new ArrayList<>();
@@ -24,6 +26,7 @@ class Player implements Serializable {
             if (!save.exists()) {
                 FileOutputStream out = new FileOutputStream(save);
                 ObjectOutputStream oout = new ObjectOutputStream(out);
+                version = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
                 oout.writeObject(this);
                 oout.flush();
                 oout.close();
@@ -35,10 +38,10 @@ class Player implements Serializable {
             oin.close();
 
             this.completed = newpl.completed;
-            this.completedOps = newpl.completed;
+            this.completedOps = newpl.completedOps;
             this.score = newpl.score;
             this.hintsPurchased = newpl.hintsPurchased;
-            this.hintsPurchasedOps = newpl.hintsPurchased;
+            this.hintsPurchasedOps = newpl.hintsPurchasedOps;
         } catch (Exception e) {e.printStackTrace();}
     }
 
@@ -118,6 +121,13 @@ class Player implements Serializable {
             oout.flush();
             oout.close();
         } catch (Exception e) {e.printStackTrace();}
+    }
+
+    private void checkVer(int min, Context context) {
+        upd(context);
+        if (version<min)
+            delete(context);
+        upd(context);
     }
 
     static boolean delete(Context context) {

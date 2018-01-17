@@ -26,6 +26,8 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+
+
         MobileAds.initialize(this, "ca-app-pub-7799305268524604~8194410407");
         AdView av = findViewById(R.id.menu_ad);
         AdRequest request = new AdRequest.Builder().build();

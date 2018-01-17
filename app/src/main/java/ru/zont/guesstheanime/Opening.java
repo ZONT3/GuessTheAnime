@@ -24,7 +24,7 @@ class Opening {
 
     // STATIC
 
-    static private  ArrayList<Opening> all = null;
+    static private ArrayList<Opening> all = null;
 
     static ArrayList<Opening> getAll(Context context) {
         if (all==null) {

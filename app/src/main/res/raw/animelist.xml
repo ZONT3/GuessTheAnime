@@ -44,7 +44,9 @@
         <name value="The Magicians Bride" lang="en" hidden="true"/>
         <name value="Невеста Чародея" lang="ru"/>
         <char>Hatori Chise</char>
-        <description lang="ru">Хатори Тисэ только 16, но она уже пережила все тяготы жизни. У неё нет никого, и жизнь её не имеет смысла. Но внезапно уже успевшие заржаветь шестерёнки судьбы начинают двигаться. В тяжёлый момент таинственный маг предложил Тисэ помощь, от которой она не могла отказаться. Но кто же он? Он похож скорее на демона, чем на человека. Поможет ли он ей или же ввергнет в пучину тьмы?</description>
+        <description lang="ru">Хатори Чисэ только 16, но она уже пережила все тяготы жизни. У неё нет никого, и жизнь её не имеет смысла. Но внезапно уже успевшие заржаветь шестерёнки судьбы начинают двигаться. В тяжёлый момент таинственный маг предложил Тисэ помощь, от которой она не могла отказаться. Но кто же он? Он похож скорее на демона, чем на человека. Поможет ли он ей или же ввергнет в пучину тьмы?</description>
+        <opening song="JUUNA - HERE"
+        	start="12000"/>
     </title>
     <title name="Burendo S"
         oname="ブレンド・S"
@@ -202,6 +204,8 @@
         <description lang="ru">По сюжету оригинала школьник Субару по дороге в магазин странным образом перенесся в другой мир, полный волшебства. Первые впечатления от нового мира тут же портит встреча с грабителями, но парня спасает от них загадочная сребровласая красавица. В благодарность парень навязывается помочь ей в поисках воришки, но едва им удается найти подсказку, как их убивают. И все же история на этом не заканчивается. После своей смерти Субару каким-то образом возвращается к жизни и перемещается к моменту своего первого появления в чужом мире. И так будет бесконечное множество раз, пока он не добьется новой цели: спасти новую знакомую.</description>
         <opening song="Suzuki Konomi - Redo"
         	end="11600"/>
+        <opening song="MYTH and ROID - Paradoxus-Paradoxum"
+        	end="9200"/>
     </title>
     <title name="Burekku Ketto"
         oname="ブレック・ケット"
@@ -414,7 +418,7 @@
     	oname="暗殺居室"
     	score="5"
     	image="ak">
-    	<name value="Assasination Classroom" lang="en"/>
+    	<name value="Assassination Classroom" lang="en"/>
     	<name value="Класс Убийц" lang="ru"/>
     	<name value="Убийство в классной комнате" lang="ru" hidden="true"/>
     	<char>Ritsu</char>
@@ -585,7 +589,7 @@
         <name value="Город в котором пропал лишь я" hidden="true" lang="ru"/>
         <name value="Город в котором меня нет" hidden="true" lang="ru"/>
         <char>Hinazuki Kayo</char>
-        <description lang="ru">Он может, хоть и непроизвольно, «откатывать» время назад, что уж точно нельзя назвать обычным.Но для чего ему дана эта сила? Быть может, для того, чтобы исправить ошибки прошлого?</description>
+        <description lang="ru">Он может, хоть и непроизвольно, «откатывать» время назад, что уж точно нельзя назвать обычным. Но для чего ему дана эта сила? Быть может, для того, чтобы исправить ошибки прошлого?</description>
     </title>
     <title name="Toukyo Guuru"
         oname="トウキョグール"
@@ -597,6 +601,22 @@
         <name value="Токийский Хуй" hidden="true" lang="ru"/>
         <char>Kaneki Ken</char>
         <description lang="ru">Чувак, может ты еще и не знаешь Боку но Пико, а?</description>
+    </title>
+    <title name="WanPanchiMen"
+        oname="ワンパンチメン"
+        score="6"
+        image="opm">
+        <name value="One-Punch Man" lang="en"/>
+        <name value="OnePunchMan" hidden="true" lang="en"/>
+        <name value="OnePunch Man" hidden="true" lang="en"/>
+        <name value="One Punch Man" hidden="true" lang="en"/>
+        <name value="Ванпанчмен" hidden="true" lang="en"/>
+        <name value="Уанпанчмен" hidden="true" lang="en"/>
+        <char></char>
+        <description lang="ru"></description>
+        <opening song="JAM project - THE HERO"
+        	score="4"
+        	end="9500"/>
     </title>
 
     <!--
