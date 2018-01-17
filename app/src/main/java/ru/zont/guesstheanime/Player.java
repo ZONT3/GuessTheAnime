@@ -123,7 +123,7 @@ class Player implements Serializable {
         } catch (Exception e) {e.printStackTrace();}
     }
 
-    private void checkVer(int min, Context context) {
+    void checkVer(int min, Context context) {
         upd(context);
         if (version<min)
             delete(context);

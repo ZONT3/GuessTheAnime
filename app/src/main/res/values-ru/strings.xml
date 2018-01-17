@@ -77,4 +77,5 @@
     <string name="op_truebut">Правильно, но ты уже отгадывал этот опенинг</string>
     <string name="op_loading">Скачивание трека…</string>
     <string name="op_err">Произошла ошибка(\nПопробуйте проверить ваше подключение к интернету</string>
+    <string name="op_skip">Пропустить</string>
 </resources>
