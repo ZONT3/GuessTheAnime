@@ -38,6 +38,7 @@ class Opening {
                     opening.animeID = i;
                     opening.resource = "http://dltngz.clan.su/gtaoa/"+title.getAttribute("image")+".mp3";
                     if (j>0) opening.resource = "http://dltngz.clan.su/gtaoa/"+title.getAttribute("image")+"_"+j+".mp3";
+                    if (op.hasAttribute("url")) opening.resource = op.getAttribute("url");
                     if (op.hasAttribute("start")) opening.start = Long.parseLong(op.getAttribute("start"));
                     if (op.hasAttribute("end")) opening.end = Long.parseLong(op.getAttribute("end"));
                     if (op.hasAttribute("score")) opening.score = Integer.valueOf(op.getAttribute("score"));
