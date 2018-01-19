@@ -621,14 +621,21 @@
         	score="4"
         	end="9500"/>
     </title>
-    <!--
     <title name="AKB0048"
         oname="AKB0048"
         score="9"
         image="akb">
         <name value="АКБ0048" lang="ru"/>
         <name value="AKB0048" lang="en"/>
-        <char></char>
+        <char>Kanata Shinonome</char>
+        <char>Chieri Sono</char>
+        <char>Makoto Yokomizo</char>
+        <char>Mimori Kishida</char>
+        <char>Nagisa Motomiya</char>
+        <char>Orine Aida</char>
+        <char>Sonata Shinonome</char>
+        <char>Suzuko Kanzaki</char>
+        <char>Yuuka Ichijou</char>
         <description lang="ru">После очередных мировых сражений люди потеряли свою планету, и их разбросало по всему космосу. Практически все колонии превратились в сырьевые придатки, жители которых должны круглые сутки работать для владельцев колоний. Чтобы рабочие не теряли энтузиазма, большинство колоний в галактическом альянсе стали подчиняться драконовскому закону, который запрещает развлекаться. Людям запрещено собирать компании, петь, танцевать, и вообще устраивать вечеринки. Те, кто нарушает законы, наказываются полицией и армейскими силами. Но всей галактике известны партизаны шоу-бизнеса, террористов любви, которые способны разогнать тоску и грусть.</description>
     </title>
     <title name="Burichi"
@@ -637,7 +644,7 @@
         image="bleach">
         <name value="Блич" lang="ru"/>
         <name value="Bleach" lang="en"/>
-        <char></char>
+        <char>Ichigo Kurosaki</char>
         <description lang="ru">Главный герой аниме и манги, рыжеволосый школьник, который с детства обладает сверхъестественной способностью видеть призраков, даже хорошо знаком с одной девочкой-привидением и приносит цветы на место её смерти. Тем не менее, он не склонен к мистицизму и, хотя читает гороскопы, утверждает, что не верит им. Однажды на его близких нападает злой дух, «пустой», но появляется девушка по имени Рукия Кучики, которая вмешивается в сражение и спасает семью </description>
     </title>
     <title name="Feiri Teiru"
@@ -647,7 +654,13 @@
 		<name value="Fairy Tail" lang="en"/>
         <name value="Фейри Тейл" hidden="true" lang="ru"/>
 		<name value="Хвост Фей" lang="ru"/>
-        <char></char>
+        <char>Charles</char>
+        <char>Erza Scarlet</char>
+        <char>Gray Fullbuster</char>
+        <char>Happy</char>
+        <char>Lucy Heartfilia</char>
+        <char>Natsu Dragneel</char>
+        <char>Wendy Marvell</char>
         <description lang="ru">17-летняя девушка, мечтающая стать настоящим магом однажды во время визита в город Харгион встречает **** — молодого человека, которому становится плохо при езде на любом виде транспорта.</description>
     </title>
     <title name="Evangelion"
@@ -658,7 +671,6 @@
 		<name value="Evangelion" hidden="true" lang="en"/>
 		<name value="Neon Genesis Evangelion" hidden="true" lang="en"/>
 		<name value="Евангелион" lang="ru"/>
-        <char></char>
         <description lang="ru">В 2015 году на Землю вновь нападают Ангелы, чужеродные боевые машины, отличающиеся громадными размерами и сокрушительной силой. Единственной надеждой для спасения человечества является…</description>
     </title>
     <title name="Danganronpa"
@@ -669,7 +681,9 @@
 		<name value="Академия" hidden="true" lang="ru"/>
 		<name value="Пуля-доказательство" hidden="true" lang="ru"/>
 		<name value="Школа Отчаяния" lang="ru"/>
-        <char></char>
+        <char>Kyouko Kirigiri</char>
+        <char>Makoto Naegi</char>
+        <char>Monokuma</char>
         <description lang="ru">Среди унылого городка, возвышалась школа "Пика надежды". Школа выбирала лучших учеников и обещала по окончанию светлое будущее… Так 15 супер-пупер учеников попали в школу… Всё бы ничего, вот только наружу теперь не выбраться, все окна забиты, двери закрыты, но и просто спокойно жить там нельзя… Всем ученикам поставили условия… Или они будут жить там до смерти, или, если хотят выбраться оттуда, должны убивать друг друга, но и это не все правила… Каждое убийство рассматривается в зале суда школы, и сами же ученики должны обнаружить в своих рядах убийцу, но если их выбор окажется неверным, его выпустят, а всех остальных за эту ошибку убьют. Так кто же останется в живых, кто окончит школу, и кто стоит за всеми этими правилами…</description>
     </title>
     <title name="Shaman Kingu"
@@ -680,7 +694,12 @@
 		<name value="Король-шаман" hidden="true" lang="ru"/>
 		<name value="Король шаман" hidden="true" lang="ru"/>
 		<name value="Шаман Кинг" lang="ru"/>
-        <char></char>
+        <char>Amidamaru</char>
+        <char>Anna Kyouyama</char>
+        <char>Hao Asakura</char>
+        <char>Manta Oyamada</char>
+        <char>Ren Tao</char>
+        <char>You Asakura</char>
         <description lang="ru">Раз в 500 лет на Земле проводится Великий Турнир Шаманов…</description>
     </title>
 	<title name="Hauru no Ugoku Shiro"
@@ -695,7 +714,8 @@
 		<name value="Howl s Moving Castle" hidden="true" lang="en"/>
 		<name value="Howls Moving Castle" hidden="true" lang="en"/>
 		<name value="Howl Moving Castle" hidden="true" lang="en"/>
-        <char></char>
+        <char>Howl</char>
+        <char>Sophie Hatter</char>
         <description lang="ru">Восемнадцатилетняя шляпница **** ведёт тихую и ничем не примечательную городскую жизнь. Однако типичный её распорядок рушится, когда в окрестностях города объявляется Ходячий замок **** — колдуна, заключившего сделку с демоном огня ******** и носящего дурную славу «похитителя» девичьих сердец.</description>
     </title>
     <title name="Kamisama Hajimemashita"
@@ -706,7 +726,8 @@
 		<name value="Очень приятно Бог" hidden="true" lang="ru"/>
 		<name value="Очень приятно, Бог" lang="ru"/>
 		<name value="Kamisama Kiss" lang="en"/>
-		<char></char>
+        <char>Nanami Momozono</char>
+        <char>Tomoe</char>
         <description lang="ru">Проигравшись в дым, отец сбегает, а 17-летнюю дочь ***** ***** жестокие люди в чёрной одежде выбрасывают из дома. Бедная девочка, собрав свои пожитки, направляется в парк, где в ночной темноте слышит испуганный голос, который умоляет спасти от озлобленной собаки.</description>
     </title>
 	<title name="Burekku Kurowaa"
@@ -715,20 +736,21 @@
         image="bc">
 		<name value="Black Clover" lang="en"/>
 		<name value="Чёрный клевер" lang="ru"/>
-		<char></char>
+        <char>Asta</char>
+        <char>Noelle Silva</char>
+        <char>Yuno</char>
         <description lang="ru">Человечество было на грани уничтожения, когда демоны начали массово уничтожать города людей, но геноцид удалось предотвратить волшебнику, изгнавшему демонов, и получившему звание Короля Магов. </description>
     </title>
-	-->
 
 	<title name="Robotikusu Nouto"
-        oname="ロボティクスノート"
+        oname="ロボティクスノーツ"
         score="7"
         image="rbn">
         <name value="Robotics; Notes" lang="en"/>
-        <name value="Записки о Робототехники" lang="ru"/>
+        <name value="Записки о Робототехнике" lang="ru"/>
         <name value="Robotics Notes" hidden="true" lang="en"/>
-        <char></char>
-        <description lang=""></description>
+        <char>Furugouri Kona</char>
+        <description lang="ru">17-летняя Акихо Сэномия, президент клуба роботехники Центральной старшей школы Танэгасима, одержима мечтой завершить большого робота, строить которого начала основатель клуба, ее старшая сестра Мисаки. Задача непростая, ибо дни клубной славы в прошлом, а сейчас единственный помощник Аки – флегматичный одноклассник Кайто Ясио, все время играющий на приставке, которая в 2019 году заменяет молодежи компьютер и телефон. При поддержке физрука Мицухико, старого друга сестры и нынешнего куратора, Сэномия-младшая заключила с завучем школы рискованное пари – клуб не закроют и даже выделят бюджет, если его представители победят на всеяпонском турнире домашних роботов, который стартует, кстати, через две недели!</description>
         <opening song="Zwei - Junjou Spectra"
         	end="24000"
         	url="https://cs1-75v4.vk-cdn.net/p23/7b91ddd6410c59.mp3?extra=sbmd9ZFlolSe3Iek5L-h0-Ws7ITU8TDnyGEwLoo-UVjNcDcSTzqUgczZIjHB-nMoFWVhp5q5YRVWI32yDzHSdH67esBXU62wK7xWdyT3Zv48NUAXJqCkjoHfPwev2dQo9YpCJS84r_U3UA"/>
