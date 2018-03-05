@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -105,10 +106,11 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
                     || op == prev);
             opening = op;
             prev = op;
-            anime = new Anime(opening.animeID, this);
-            Log.d("GTO", anime.originalTitle + " / " + anime.originalRomTitle);
         } else opening = Opening.get(getIntent().getIntExtra("id", -1));
 
+        if (opening==null) finish();
+        anime = new Anime(opening.animeID, this);
+        Log.d("GTO", anime.originalTitle + " / " + anime.originalRomTitle);
         refreshLayout();
         input.addTextChangedListener(this);
 
@@ -267,6 +269,25 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
             play.setAlpha((float) 0.75);
             Toast.makeText(this, R.string.op_truebut, Toast.LENGTH_LONG).show();
         } else Log.d("input", "incorr");
+        if (input.getText().toString().equals("!list")) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            final ArrayList<Opening> ops = Opening.getAll(this);
+            ArrayAdapter<Opening> adapter = new ArrayAdapter<>(this, android.R.layout.select_dialog_item, ops);
+            builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    if (refresher!=null) {
+                        refresher.cancel(false);
+                        waitForRefresher();
+                    }
+                    releaseMP();
+                    Intent intent = new Intent(OpeningActivity.this, OpeningActivity.class);
+                    intent.putExtra("id", ops.get(i).id);
+                    startActivity(intent);
+                    finish();
+                }
+            }).create().show();
+        }
     }
 
     @Override
@@ -337,7 +358,16 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
     private void purchaseHintOps(int hint) {
         if (!player.hintPurchasedOps(opening.id, hint, this)) {
             if (player.addScore(0, this)<HINT_COST[hint]) {
-                Toast.makeText(this, R.string.guess_hints_error_nopoints, Toast.LENGTH_LONG).show();
+                AlertDialog.Builder b = new AlertDialog.Builder(this);
+                b.setTitle(R.string.guess_hints_error_nopoints)
+                        .setMessage(R.string.guess_hints_showad)
+                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                startActivity(new Intent(OpeningActivity.this, RewardActivity.class));
+                            }
+                        })
+                        .setNegativeButton(android.R.string.no, null).create().show();
                 return;
             }
         }

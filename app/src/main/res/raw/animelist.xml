@@ -390,7 +390,7 @@
         <name value="ДхД" lang="ru" hidden="true"/>
         <opening song="Larval Stage Planning - Trip -innocent of D-"
         	end="23300"
-        	url="https://psv4.userapi.com/c6150/u218377370/audios/0a086d71bbdc.mp3?extra=_TN9YqLKgjx23FK1xbUCuLI3SW-fFihTxgg3BCUGpo368D7SmLp-4AaMdiVlP9lXE2xKtEt39NV077b4QQx5jHwKVlDBRU1CZC_JA6SWq3AZRRkSWeecEgx--XKveSAarpkbLs6KD0mFmQ"/>
+        	url="https://www.dropbox.com/s/8djwjijmv1yxx2b/Larval%20Stage%20Planning%20-%20Trip.mp3?dl=1"/>
     </title>
     <title name="JoJo no Kimyou na Bouken"
         oname="ジョジョの奇妙な冒険"
@@ -746,14 +746,31 @@
         oname="ロボティクスノーツ"
         score="7"
         image="rbn">
-        <name value="Robotics; Notes" lang="en"/>
+        <name value="Robotics;Notes" lang="en"/>
+        <name value="Robotics; Notes" hidden="true" lang="en"/>
         <name value="Записки о Робототехнике" lang="ru"/>
         <name value="Robotics Notes" hidden="true" lang="en"/>
         <char>Furugouri Kona</char>
         <description lang="ru">17-летняя Акихо Сэномия, президент клуба роботехники Центральной старшей школы Танэгасима, одержима мечтой завершить большого робота, строить которого начала основатель клуба, ее старшая сестра Мисаки. Задача непростая, ибо дни клубной славы в прошлом, а сейчас единственный помощник Аки – флегматичный одноклассник Кайто Ясио, все время играющий на приставке, которая в 2019 году заменяет молодежи компьютер и телефон. При поддержке физрука Мицухико, старого друга сестры и нынешнего куратора, Сэномия-младшая заключила с завучем школы рискованное пари – клуб не закроют и даже выделят бюджет, если его представители победят на всеяпонском турнире домашних роботов, который стартует, кстати, через две недели!</description>
         <opening song="Zwei - Junjou Spectra"
         	end="24000"
-        	url="https://cs1-75v4.vk-cdn.net/p23/7b91ddd6410c59.mp3?extra=sbmd9ZFlolSe3Iek5L-h0-Ws7ITU8TDnyGEwLoo-UVjNcDcSTzqUgczZIjHB-nMoFWVhp5q5YRVWI32yDzHSdH67esBXU62wK7xWdyT3Zv48NUAXJqCkjoHfPwev2dQo9YpCJS84r_U3UA"/>
+        	url="https://www.dropbox.com/s/gou5zmeyzb5c7nl/Zwei%20-%20Junjou%20Spectra.mp3?dl=1"/>
+    </title>
+    <title name="Shutainzu Geeto"
+        oname="シュタインズゲート"
+        score="8"
+        image="sg">
+        <name value="Steins;Gate" lang="en"/>
+        <name value="Steins; Gate" hidden="true" lang="en"/>
+        <name value="Steins Gate" hidden="true" lang="en"/>
+        <name value="Врата Штейна" lang="ru"/>
+        <name value="Врата Штайнера" hidden="true" lang="ru"/>
+        <name value="Шайтан Калитка" hidden="true" lang="ru"/>
+        <char>Okabe Rintarou</char>
+        <char>Makisu Kurisu</char>
+        <description lang="ru">Акихабара – интереснейшее место, где обитают самые разные люди – от слегка сдвинутых по фазе до больных на всю голову. Именно такая компания собралась в «Лаборатории Гаджетов Будущего», что над лавкой старых телевизоров. Возглавляет ее «сумасшедший ученый», 18-летний Ринтаро Окабэ aka Окарин, настоящий буйный и борец с мировым заговором. В серьезном деле нельзя без хакера – вот и он, Итару Хасида, конечно же, толстяк и истинный отаку. Добрая фея лаборатории – Маюри Сиина, подруга детства Ринтаро, официантка мейд-кафе и фанатка косплея, а научную мощь бригады резко повысила юный гений Крис Макисэ, стосковавшаяся по интеллектуальным приключениям и простому человеческому теплу. </description>
+        <opening song="Itou Kanako - Hacking To The Gate"
+            url="https://www.dropbox.com/s/kf34x7x6uelmawy/Itou%20Kanako%20-%20Hacking%20To%20The%20Gate.mp3?dl=1"/>
     </title>
 
     <!--

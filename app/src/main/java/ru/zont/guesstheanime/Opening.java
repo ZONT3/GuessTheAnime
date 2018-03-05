@@ -55,4 +55,9 @@ class Opening {
             if (op.id==id) return op;
         return null;
     }
+
+    @Override
+    public String toString() {
+        return song;
+    }
 }
