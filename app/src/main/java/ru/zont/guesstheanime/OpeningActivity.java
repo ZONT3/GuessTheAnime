@@ -41,7 +41,7 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
     private static final int HINT_ART = 2;
     private static final int HINT_DESC = 3;
 
-    private static final int TICK = 10;
+    private static final int TICK = 17;
 
     static ArrayList<Integer> played = new ArrayList<>();
 
