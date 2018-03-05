@@ -165,6 +165,7 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
             play.setBackgroundResource(R.drawable.button_pause);
         }
 
+        if (!prepared) return;
         refreshPlayer();
         Log.d("GTO", "POS:" + mp.getCurrentPosition());
     }
@@ -182,7 +183,7 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
             } else if (pb.isIndeterminate() && !(mp.getCurrentPosition() >= opening.end && !guessed && opening.end > 0))
                 pb.setIndeterminate(false);
 
-            setPlay(playSt && prepared && (mp.getCurrentPosition() < opening.end || guessed || opening.end <= 0));
+            setPlay(playSt && (mp.getCurrentPosition() < opening.end || guessed || opening.end <= 0));
         } catch (Exception e) {e.printStackTrace();}
     }
 
