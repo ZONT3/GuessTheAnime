@@ -69,6 +69,7 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
 
     private MediaPlayer mp;
     Refresher refresher;
+    boolean prepared;
 
     private static final boolean DEBUG = false;
 
@@ -81,6 +82,8 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
         AdRequest request = new AdRequest.Builder().build();
         av.loadAd(request);
         ia = AdShower.load(this);
+
+        prepared = false;
 
         root = findViewById(R.id.op_image);
         name = findViewById(R.id.op_titles);
@@ -115,7 +118,6 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
         input.addTextChangedListener(this);
 
         try {
-            play.setEnabled(false);
             loading.setVisibility(View.VISIBLE);
 
             mp = new MediaPlayer();
@@ -180,7 +182,7 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
             } else if (pb.isIndeterminate() && !(mp.getCurrentPosition() >= opening.end && !guessed && opening.end > 0))
                 pb.setIndeterminate(false);
 
-            setPlay(playSt && (mp.getCurrentPosition() < opening.end || guessed || opening.end <= 0));
+            setPlay(playSt && prepared && (mp.getCurrentPosition() < opening.end || guessed || opening.end <= 0));
         } catch (Exception e) {e.printStackTrace();}
     }
 
@@ -224,11 +226,11 @@ public class OpeningActivity extends AppCompatActivity implements TextWatcher, M
 
     @Override
     public void onPrepared(MediaPlayer mediaPlayer) {
+        prepared = true;
         refresher = new Refresher();
         refresher.execute();
         mediaPlayer.seekTo((int) opening.start);
         loading.setVisibility(View.GONE);
-        play.setEnabled(true);
     }
 
     @Override

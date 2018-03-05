@@ -123,10 +123,14 @@ class Player implements Serializable {
         } catch (Exception e) {e.printStackTrace();}
     }
 
-    void checkVer(int min, Context context) {
+    void checkVer(int min, int opmin, int artmin, Context context) {
         upd(context);
         if (version<min)
             delete(context);
+        else {
+            if (version<opmin) completedOps = new ArrayList<>();
+            if (version<artmin) completed = new ArrayList<>();
+        }
         upd(context);
     }
 

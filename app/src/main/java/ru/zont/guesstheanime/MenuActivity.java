@@ -22,14 +22,16 @@ import java.util.ArrayList;
 public class MenuActivity extends AppCompatActivity {
 
     @SuppressWarnings("FieldCanBeLocal")
-    private static int MINVER = 10;
+    private static final int MINVER = 12;
+    private static final int OP_MINVER = 12;
+    private static final int ART_MINVER = 12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        new Player().checkVer(MINVER, this);
+        new Player().checkVer(MINVER, OP_MINVER, ART_MINVER, this);
 
         MobileAds.initialize(this, "ca-app-pub-7799305268524604~8194410407");
         AdView av = findViewById(R.id.menu_ad);
