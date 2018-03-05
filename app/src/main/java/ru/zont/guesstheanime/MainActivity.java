@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
             button.setVisibility(View.VISIBLE);
             button.setText(i+1+"");
             button.setTextSize(32);
-            button.setEnabled(player.isCompleted(i-1, this));
             if (player.isCompleted(i, this)) button.setBackgroundColor(Color.GREEN);
             final int finalI = i;
             button.setOnClickListener(new View.OnClickListener() {

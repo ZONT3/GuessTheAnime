@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -65,6 +66,24 @@ public class MenuActivity extends AppCompatActivity {
         op.setOnClickListener(listener);
 
         score.setText(getString(R.string.menu_score, new Player().addScore(0, this)));
+
+        op.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MenuActivity.this);
+                final ArrayList<Opening> ops = Opening.getAll(MenuActivity.this);
+                ArrayAdapter<Opening> adapter = new ArrayAdapter<>(MenuActivity.this, android.R.layout.select_dialog_item, ops);
+                builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent intent = new Intent(MenuActivity.this, OpeningActivity.class);
+                        intent.putExtra("id", ops.get(i).id);
+                        startActivity(intent);
+                    }
+                }).create().show();
+                return false;
+            }
+        });
     }
 
     @Override

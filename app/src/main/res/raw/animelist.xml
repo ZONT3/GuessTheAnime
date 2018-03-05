@@ -45,8 +45,7 @@
         <name value="Невеста Чародея" lang="ru"/>
         <char>Hatori Chise</char>
         <description lang="ru">Хатори Чисэ только 16, но она уже пережила все тяготы жизни. У неё нет никого, и жизнь её не имеет смысла. Но внезапно уже успевшие заржаветь шестерёнки судьбы начинают двигаться. В тяжёлый момент таинственный маг предложил Тисэ помощь, от которой она не могла отказаться. Но кто же он? Он похож скорее на демона, чем на человека. Поможет ли он ей или же ввергнет в пучину тьмы?</description>
-        <opening song="JUUNA - HERE"
-        	start="12000"/>
+        <opening song="JUUNA - HERE"/>
     </title>
     <title name="Burendo S"
         oname="ブレンド・S"
@@ -245,6 +244,21 @@
         <description lang="ru">15-летний Окумура Рин с раннего детства был хулиганом – буйным, вспыльчивым, готовым на все, чтобы отстоять свои «понятия». Парня сдерживало лишь влияние приемного отца-священника, да еще общение с братом-близнецом Юкио. Тем не менее, за стенами монастыря, где жили братья, старшего звали не иначе как «отродьем демона». Увы, звали пророчески – Рин оказался сыном Сатаны, правителя Геенны, который создал сосуд для своего явления в Ассию – материальный мир. Иерархи Церкви хотели уничтожить близнецов Окумура после рождения, но влиятельный отец Фудзимото поклялся воспитать их как людей и не отдавать адским силам. </description>
         <opening song="UVERworld - Itteki no Eikyou"
         	end="28000"/>
+    </title>
+    <title name="Deeto a Raibu"
+        oname="デート・ア・ライブ"
+        score="5"
+        image="dal">
+        <name value="Date a Live" lang="en"/>
+        <name value="Рандеву с Жизнью" lang="ru"/>
+        <char>Yamai Kaguya</char>
+        <char>Yamai Yuzuru</char>
+        <description lang="ru">Ицука Шидо - простой старшеклассник. В последний день весенних каникул чудовищный взрыв разрушает его родной город, а перед ним внезапно появляется девушка в доспехах. Не успел Шидо прийти в себя, как его ошарашивают новой информацией: его сестра, Котори, заявляет, что эта девушка - дух, ставшая причиной пространственно-временных сдвигов. Попутно Котори сообщает, что является командующим организации "Рататоск" и ее задача - предотвратить гибель человечества от рук девушки-духа. А самый безопасный способ сделать это - закрутить с ней роман!
+            Таким образом ответственность за судьбу мира легла на плечи Шидо, а единственным напутствием, которое он услышал, стала похожая на шутку фраза сестры: "Я не прошу тебя победить духа. Просто дай ей влюбиться в тебя и спаси человечество!"</description>
+        <opening song="sweet ARMS - Date a Live"
+            url="https://www.dropbox.com/s/jw7ha86qcix9xhw/sweet%20ARMS%20-%20Date%20A%20Live.mp3?dl=1" />
+        <opening song="sweet ARMS - Trust in You"
+            url="https://www.dropbox.com/s/tlvtbwylj637xz1/sweet%20ARMS%20-%20Trust%20in%20you.mp3?dl=1" />
     </title>
     <title name="Quanzhi Fashi"
         oname="全职法师"
@@ -515,6 +529,21 @@
         <opening song="Metamorphose feat. Yoko Ishida - Over the Testament"
         	end="14450"/>
     </title>
+    <title name="Eromanga Sensei"
+        oname="エロマンガ先生"
+        score="2"
+        image="ems">
+        <name value="Eromanga-Sensei" lang="en"/>
+        <name value="Эроманга-Сенсей" hidden="true" lang="ru"/>
+        <name value="Эроманга-Сэнсэй" hidden="true" lang="ru"/>
+        <name value="Эроманга Сенсей" hidden="true" lang="ru"/>
+        <name value="Эроманга Сэнсэй" hidden="true" lang="ru"/>
+        <char>Jinno Megumi</char>
+        <description lang="ru">Изуми Масамунэ — пятнадцатилетний школьник, который зарабатывает себе на жизнь тем, что пишет ранобэ. С иллюстрациями ему помогает некий человек под псевдонимом «Эроманга». Масамунэ понятия не имеет, кто этот человек, так как он работает только через Интернет и старается скрывать свою истинную личность.
+            Изуми Сагири— младшая сводная сестренка Масамунэ. Она хикикомори, давно забросившая школу и уже как год не покидающая свой дом. Сагири ни с кем не общается, даже со своим братом. И поэтому важной целью для Масамунэ стало совершенствование своих литературных навыков, что позволило бы ему заработать достаточно денег, чтобы содержать себя и свою младшую сестру.</description>
+        <opening song="ClariS - Hitorigoto"
+            url="https://www.dropbox.com/s/f6w1fpg8drnl3rh/ClariS%20-%20Hitorigoto.mp3?dl=1" />
+    </title>
     <title name="Masamune-kun no Ribenji"
         oname="政宗くんのリベンジ"
         score="8"
@@ -536,6 +565,44 @@
         <opening song="Ouhashi Ayaka - Wagamama MIRROR HEART"
         	end="10200"/>
     </title>
+    <title name="Kono Subarashii Sekai ni Shukufuku Wo!"
+        oname="この素晴らしい世界に祝福を！"
+        score="5"
+        image="kssnsw">
+        <name value="God's Blessing on This Wonderful World!" lang="en"/>
+        <name value="God's Blessing on This Wonderful World" hidden="true" lang="en"/>
+        <name value="God s Blessing on This Wonderful World" hidden="true" lang="en"/>
+        <name value="Gods Blessing on This Wonderful World" hidden="true" lang="en"/>
+        <name value="KonoSuba" lang="en"/>
+        <name value="Богиня Благословляет этот Замечательный Мир!" lang="ru"/>
+        <name value="Богиня Благословляет этот Замечательный Мир" hidden="true" lang="ru"/>
+        <name value="Этот Замечательный Мир" hidden="true" lang="ru"/>
+        <name value="Коносуба" hidden="true" lang="ru"/>
+        <name value="Kono Subarashii Sekai ni Shukufuku Wo" hidden="true" lang="jp"/>
+        <name value="Give Blessings to This Wonderful World" hidden="true" lang="jp"/>
+        <char>Satou Kazuma</char>
+        <description lang="ru">Так уж получилось, что жизнь Сато Казумы, хикикомори, увлеченного видеоиграми, оборвалась в результате дорожно-транспортного происшествия. Такая вот суровая плата за хороший поступок, за спасение человека. Однако, очнувшись, парень вдруг понял, что жив-здоров, а перед собой увидел симпатичную девушку, Акву, представившуюся богиней. Вопреки ожиданиям, богиня не произнесла, мол, «ну-ка, парень, сгруппируйся, сейчас тебя на небеса отправим!» Напротив, девушка едва ли не сразу стала объяснять, что ищет героя, способного победить какого-то-там злобного Короля Демонов и тем самым спасти какой-то-там другой мир. И уж больно этот «какой-то-там» мир был похож на видеоигру. Что, безусловно, подкупало.
+            «Значит, гляди», – продолжала Аква. – «Если согласишься, можешь взять с собой одну любую вещь или способность. Хочешь, меч из хвоста неведомого чудовища, а хочешь – силу как у горного великана. Ну так как, что выбираешь?» Долго Казума думать не стал. «Выбираю тебя», – сообразил он, чем тут же выбил навязчивую богиню из колеи. Так начинаются приключения странного хикикомори и незадачливой богини по чужому и неприветливому миру, где Казума попытается начать новую мирную жизнь, на время позабыв, что зло здесь никогда не дремлет.</description>
+        <opening song="Machico - Fantastic Dreamer"
+            url="https://www.dropbox.com/s/m8ppw5r6k901gbh/Machico%20-%20Fantastic%20Dreamer.mp3?dl=1" />
+        <opening song="Machico - Tomorrow"
+            url="https://www.dropbox.com/s/1b5lvqjz4thecnp/Machico%20-%20Tomorrow.mp3?dl=1" />
+    </title>
+    <title name="Shingeki no Kyojin"
+        oname="進撃の巨人"
+        score="3"
+        image="snk">
+        <name value="Attack on Titan" lang="en"/>
+        <name value="Атака Титанов" lang="ru"/>
+        <name value="Атака Гигантов" hidden="true" lang="ru"/>
+        <name value="Вторжение Титанов" hidden="true" lang="ru"/>
+        <name value="Вторжение Гигантов" hidden="true" lang="ru"/>
+        <char>Levi</char>
+        <description lang="ru">Вместо прогресса человечество оказалось отброшено назад появлением расы гигантов. Огромные гуманоиды не обладали ни речью, ни разумом, но при этом пожирали людей, как чипсы, а обычное оружие уровня XIX века оказалось бессильно. Остатки рода людского смогли выжить лишь за циклопическими стенами, которые тройным кольцом опоясали последние поля, города и деревни. Затишье продолжалось сто лет, за это время люди успокоились, армия была сокращена, а городская стража превратилась в дармоедов. Боеспособность сохранил лишь Разведкорпус – но кому нужны самоубийцы, что постоянно рискуют жизнью за стенами, когда можно спокойно сидеть за каменным забором? </description>
+        <opening song="Guren no Yumiya"
+            url="https://www.dropbox.com/s/lg7hjwy8rrzvnqj/Guren%20no%20Yumiya.mp3?dl=1"
+            end="18115"/>
+    </title>
     <title name="Enjeru Biitsu!"
         oname="エンジェルビーツ!"
         score="7"
@@ -551,6 +618,48 @@
         <description lang="ru">Не зря говорят, что японская школьная система – самая тяжелая и суровая. Так очнулся парень по фамилии Отонаси (имя он забыл) на том свете – а там снова школа! Вот только, несмотря на красивую обертку, школа эта больше походит на исправительную колонию для тех, кто слишком рано покинул бренный мир и не успел (или не захотел) познать правила и законы «реального общества». То есть покрутится в ней юный воспитуемый, научится ходить строем и участвовать во внеклассных мероприятиях согласно плану – и пора отправляться на этап согласно накопленной карме. Только почему-то не всем воспитуемым это нравится…</description>
         <opening song="Liar - My Soul, Your Beats!"
         	end="13500"/>
+    </title>
+    <title name="Robotikusu Nouto"
+        oname="ロボティクスノーツ"
+        score="7"
+        image="rbn">
+        <name value="Robotics;Notes" lang="en"/>
+        <name value="Robotics; Notes" hidden="true" lang="en"/>
+        <name value="Записки о Робототехнике" lang="ru"/>
+        <name value="Robotics Notes" hidden="true" lang="en"/>
+        <char>Furugouri Kona</char>
+        <description lang="ru">17-летняя Акихо Сэномия, президент клуба роботехники Центральной старшей школы Танэгасима, одержима мечтой завершить большого робота, строить которого начала основатель клуба, ее старшая сестра Мисаки. Задача непростая, ибо дни клубной славы в прошлом, а сейчас единственный помощник Аки – флегматичный одноклассник Кайто Ясио, все время играющий на приставке, которая в 2019 году заменяет молодежи компьютер и телефон. При поддержке физрука Мицухико, старого друга сестры и нынешнего куратора, Сэномия-младшая заключила с завучем школы рискованное пари – клуб не закроют и даже выделят бюджет, если его представители победят на всеяпонском турнире домашних роботов, который стартует, кстати, через две недели!</description>
+        <opening song="Zwei - Junjou Spectra"
+            end="24000"
+            url="https://www.dropbox.com/s/epvm1vfyph19l1f/Zwei%20-%20Junjou%20Spectra.mp3?dl=1"/>
+    </title>
+    <title name="Shutainzu Geeto"
+        oname="シュタインズゲート"
+        score="8"
+        image="sg">
+        <name value="Steins;Gate" lang="en"/>
+        <name value="Steins; Gate" hidden="true" lang="en"/>
+        <name value="Steins Gate" hidden="true" lang="en"/>
+        <name value="Врата Штейна" lang="ru"/>
+        <name value="Врата Штайнера" hidden="true" lang="ru"/>
+        <name value="Шайтан Калитка" hidden="true" lang="ru"/>
+        <char>Okabe Rintarou</char>
+        <char>Makisu Kurisu</char>
+        <description lang="ru">Акихабара – интереснейшее место, где обитают самые разные люди – от слегка сдвинутых по фазе до больных на всю голову. Именно такая компания собралась в «Лаборатории Гаджетов Будущего», что над лавкой старых телевизоров. Возглавляет ее «сумасшедший ученый», 18-летний Ринтаро Окабэ aka Окарин, настоящий буйный и борец с мировым заговором. В серьезном деле нельзя без хакера – вот и он, Итару Хасида, конечно же, толстяк и истинный отаку. Добрая фея лаборатории – Маюри Сиина, подруга детства Ринтаро, официантка мейд-кафе и фанатка косплея, а научную мощь бригады резко повысила юный гений Крис Макисэ, стосковавшаяся по интеллектуальным приключениям и простому человеческому теплу. </description>
+        <opening song="Itou Kanako - Hacking To The Gate"
+            url="https://www.dropbox.com/s/kf34x7x6uelmawy/Itou%20Kanako%20-%20Hacking%20To%20The%20Gate.mp3?dl=1"/>
+    </title>
+    <title name="Owari no Serafu"
+        oname="終わりのセラフ"
+        score="6"
+        image="ons">
+        <name value="Seraph of The End" lang="en"/>
+        <name value="Последний Серафим" lang="ru"/>
+        <name value="Серафим Конца Времен" lang="ru"/>
+        <char>Crowley Eusford</char>
+        <description lang="ru">Однажды на Земле появился таинственный вирус, и возник он будто из ниоткуда. Каждый человек, заразившийся им, умирал, если был старше тринадцати лет. В то же время в мир пришли вампиры, до сих пор скрывавшиеся во тьме, и все человечество пало перед ними.</description>
+        <opening song="Sawano Hiroyuki - X.U."
+            url="https://www.dropbox.com/s/b9zf8rcqziz7ubm/Sawano%20Hiroyuki%20-%20X.U.mp3?dl=1" />
     </title>
     <title name="Gureeto Tiichaa Onizuka"
         oname="グレート・チーチャー・オニズカ"
@@ -745,36 +854,41 @@
         <char>Yuno</char>
         <description lang="ru">Человечество было на грани уничтожения, когда демоны начали массово уничтожать города людей, но геноцид удалось предотвратить волшебнику, изгнавшему демонов, и получившему звание Короля Магов. </description>
     </title>
-
-	<title name="Robotikusu Nouto"
-        oname="ロボティクスノーツ"
-        score="7"
-        image="rbn">
-        <name value="Robotics;Notes" lang="en"/>
-        <name value="Robotics; Notes" hidden="true" lang="en"/>
-        <name value="Записки о Робототехнике" lang="ru"/>
-        <name value="Robotics Notes" hidden="true" lang="en"/>
-        <char>Furugouri Kona</char>
-        <description lang="ru">17-летняя Акихо Сэномия, президент клуба роботехники Центральной старшей школы Танэгасима, одержима мечтой завершить большого робота, строить которого начала основатель клуба, ее старшая сестра Мисаки. Задача непростая, ибо дни клубной славы в прошлом, а сейчас единственный помощник Аки – флегматичный одноклассник Кайто Ясио, все время играющий на приставке, которая в 2019 году заменяет молодежи компьютер и телефон. При поддержке физрука Мицухико, старого друга сестры и нынешнего куратора, Сэномия-младшая заключила с завучем школы рискованное пари – клуб не закроют и даже выделят бюджет, если его представители победят на всеяпонском турнире домашних роботов, который стартует, кстати, через две недели!</description>
-        <opening song="Zwei - Junjou Spectra"
-        	end="24000"
-        	url="https://www.dropbox.com/s/epvm1vfyph19l1f/Zwei%20-%20Junjou%20Spectra.mp3?dl=1"/>
-    </title>
-    <title name="Shutainzu Geeto"
-        oname="シュタインズゲート"
+    <title name="Denpa Kyoushi"
+        oname="電波教師"
         score="8"
-        image="sg">
-        <name value="Steins;Gate" lang="en"/>
-        <name value="Steins; Gate" hidden="true" lang="en"/>
-        <name value="Steins Gate" hidden="true" lang="en"/>
-        <name value="Врата Штейна" lang="ru"/>
-        <name value="Врата Штайнера" hidden="true" lang="ru"/>
-        <name value="Шайтан Калитка" hidden="true" lang="ru"/>
-        <char>Okabe Rintarou</char>
-        <char>Makisu Kurisu</char>
-        <description lang="ru">Акихабара – интереснейшее место, где обитают самые разные люди – от слегка сдвинутых по фазе до больных на всю голову. Именно такая компания собралась в «Лаборатории Гаджетов Будущего», что над лавкой старых телевизоров. Возглавляет ее «сумасшедший ученый», 18-летний Ринтаро Окабэ aka Окарин, настоящий буйный и борец с мировым заговором. В серьезном деле нельзя без хакера – вот и он, Итару Хасида, конечно же, толстяк и истинный отаку. Добрая фея лаборатории – Маюри Сиина, подруга детства Ринтаро, официантка мейд-кафе и фанатка косплея, а научную мощь бригады резко повысила юный гений Крис Макисэ, стосковавшаяся по интеллектуальным приключениям и простому человеческому теплу. </description>
-        <opening song="Itou Kanako - Hacking To The Gate"
-            url="https://www.dropbox.com/s/kf34x7x6uelmawy/Itou%20Kanako%20-%20Hacking%20To%20The%20Gate.mp3?dl=1"/>
+        image="dk">
+        <name value="He is an Ultimate Teacher" lang="en"/>
+        <name value="Ultimate Otaku Teacher" lang="en"/>
+        <name value="Он - Сильнейший учитель!" lang="ru"/>
+        <name value="Он Сильнейший Учитель" hidden="true" lang="ru"/>
+        <name value="Сильнейший Учитель" hidden="true" lang="ru"/>
+        <char>Kagami Jun'ichirou</char>
+        <description lang="ru">Джуничиро Кагами — известный физик, работы которого некогда даже были опубликованы в журнале «Nature». Но наука для него осталась в прошлом: после окончания колледжа он вдруг потерял интерес к работе. Джуничиро стал типичным отаку, посвятившим свою жизнь просмотру аниме и ведению блога. Сам он утверждает, что его постигла страшная болезнь под названием «НХНД» - Не Хочу - Не Делаю.</description>
+        <opening song="TrySail - Youthful Dreamer"
+            url="https://www.dropbox.com/s/hmv65ui1ftu8yps/TrySail%20-%20Youthful%20Dreamer.mp3?dl=1" />
+        <opening song="Sphere - Vivid Brilliant Door!"
+            url="https://www.dropbox.com/s/4ksudod7b8uapm4/Sphere%20-%20Vivid%20Brilliant%20Door%21.mp3?dl=1" />
+    </title>
+    <title name="Kurasuruumu Kuraishisu"
+        oname="クラスルーム・クライシス"
+        score="8"
+        image="cc">
+        <name value="Classroom Crisis" lang="en"/>
+        <name value="Классный Кризис" lang="ru"/>
+        <char>Kanaoka Tsubasa</char>
+        <char>Kaminagaya Aki</char>
+        <char>Kitahara Kojirou</char>
+        <char>Maioka Sakugo</char>
+        <char>Nounen Yuna</char>
+        <char>Ryouka Makoto</char>
+        <char>Sera Kaito</char>
+        <char>Sera Mizuki</char>
+        <char>Shirasaki Iris</char>
+        <char>Yamaki Subaru</char>
+        <description lang="ru">Четвёртый Токио, одна из новых префектур Японии на Марсе. Город Киришина, особая экономическая зона Четвертого Токио, является домом для элитной корпорации, известной в сфере аэрокосмического бизнеса — Корпорации Киришина. Компания расширяет свою долю на рынке в различных отраслях промышленности, в то же время управляя старшей школой при Академии Науки и Технологий Киришина. Одно не только это делает её уникальной, так как на территории кампуса также есть высокопрофильный класс.</description>
+        <opening song="TrySail - Cobalt"
+            url="https://www.dropbox.com/s/h102mru5oqnink0/TrySail%20-%20Cobalt.mp3?dl=1" />
     </title>
 
     <!--
@@ -785,7 +899,7 @@
         <name value="" lang=""/>
         <name value="" hidden="true" lang=""/>
         <char></char>
-        <description lang=""></description>
+        <description lang="ru"></description>
     </title>
     -->
 </list>
